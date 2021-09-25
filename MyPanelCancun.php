@@ -131,9 +131,9 @@
           <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#hola">
-  Launch demo modal
-</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner1">
+              Modificar
+            </button>
           </div>
         </div>
         </div>
@@ -141,7 +141,9 @@
             <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Banner #2</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner2">
+              Modificar
+            </button>
           </div>
         </div>
         </div>
@@ -149,14 +151,18 @@
 <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Banner #3</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner3">
+              Modificar
+            </button>
           </div>
         </div>        </div>
          <div class="col-2">
 <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Banner #4</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner4">
+              Modificar
+            </button>
           </div>
         </div>        </div>
          <div class="col-2">
@@ -431,27 +437,90 @@
 </div>
 <!--panel lateral-->
 
-<!--modales-->
-<div class="modal fade" id="hola" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!--modales modal banner1-->
+<div class="modal fade" id="banner1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Modificación de Banner</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
+        <button type="button" class="btn btn-danger">Cancelar</button>
       </div>
     </div>
   </div>
 </div>
-<!--modales-->
+<!--modales modal banner 1-->
+<!--modales modal banner2-->
+<div class="modal fade" id="banner2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificación de Banner</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
+        <button type="button" class="btn btn-danger">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modales modal banner 2-->
+<!--modales modal banner3-->
+<div class="modal fade" id="banner3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificación de Banner</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
+        <button type="button" class="btn btn-danger">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modales modal banner 3-->
+<!--modales modal banner4-->
+<div class="modal fade" id="banner4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificación de Banner</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
+        <button type="button" class="btn btn-danger">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modales modal banner 3-->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
