@@ -36,9 +36,8 @@
       <a class="btn btn-primary" id="v-pills-settings-tab" data-toggle="pill" href="MyPanelQuer.php" role="tab" aria-controls="v-pills-settings" aria-selected="false">Contenido Queretaro</a>-->
       <!--<button class="btn btn-primary" onclick="window.location.href='https://www.google.com'">Contenido Cancún Riviera Maya</button>-->
       <div class="dropdown">
-        <button class="btn btn-primary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Contenido Cancún Riviera Maya
-        </button>
+       
+        <!--
         <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item " href="MyPanelCancun.php">Pantalla De Inicio</a>
           <a class="dropdown-item" href="#">Eventos</a>
@@ -47,78 +46,79 @@
           <a class="dropdown-item" href="#">Miembros</a>
           <a class="dropdown-item" href="#">Buzón</a>
 
-        </div>
+        </div>-->
+        <li class="nav-item dropdown btn-block btn btn-primary bg-light">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contenido Cancun-Riviera Maya</a>
+    <div class="dropdown-menu">
+    <a class="dropdown-item " href="MyPanelCancun.php">Pantalla De Inicio</a>
+          <a class="dropdown-item" href="EventosCancun.php">Eventos</a>
+          <a class="dropdown-item" href="#">Alianzas</a>
+          <a class="dropdown-item" href="#">Organización</a>
+          <a class="dropdown-item" href="#">Miembros</a>
+          <a class="dropdown-item" href="#">Buzón</a>
+    </div>
+  </li>
+      </div>
+      
+        <div class="dropdown">
+        <li class="nav-item dropdown btn-block btn btn-primary bg-light">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contenido CDMX.</a>
+    <div class="dropdown-menu">
+    <a class="dropdown-item " href="MyPanelCancun.php">Pantalla De Inicio</a>
+          <a class="dropdown-item" href="EventosCancun.php">Eventos</a>
+          <a class="dropdown-item" href="MyPanelCancun.php">Alianzas</a>
+          <a class="dropdown-item" href="#">Organización</a>
+          <a class="dropdown-item" href="#">Miembros</a>
+          <a class="dropdown-item" href="#">Buzón</a>
+    </div>
+  </li>
+      </div>
+      <div class="dropdown">
+        
+      <li class="nav-item dropdown btn-block btn btn-primary bg-light">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contenido Guadalajara</a>
+    <div class="dropdown-menu">
+    <a class="dropdown-item " href="MyPanelCancun.php">Pantalla De Inicio</a>
+          <a class="dropdown-item" href="EventosCancun.php">Eventos</a>
+          <a class="dropdown-item" href="MyPanelCancun.php">Alianzas</a>
+          <a class="dropdown-item" href="#">Organización</a>
+          <a class="dropdown-item" href="#">Miembros</a>
+          <a class="dropdown-item" href="#">Buzón</a>
+    </div>
+  </li>
       </div>
         <div class="dropdown">
-        <button class="btn btn-primary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Contenido Ciudad De México
-        </button>
-        <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item " href="MyPanelcdmx.php">Paantalla De Inicio</a>
-          <a class="dropdown-item" href="#">Eventos</a>
-          <a class="dropdown-item" href="#">Alianzas</a>
+       
+        <li class="nav-item dropdown btn-block btn btn-primary bg-light">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contenido Monterrey</a>
+    <div class="dropdown-menu">
+    <a class="dropdown-item " href="MyPanelCancun.php">Pantalla De Inicio</a>
+          <a class="dropdown-item" href="EventosCancun.php">Eventos</a>
+          <a class="dropdown-item" href="MyPanelCancun.php">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
           <a class="dropdown-item" href="#">Miembros</a>
           <a class="dropdown-item" href="#">Buzón</a>
-
-        </div>
+    </div>
+  </li>
       </div>
       <div class="dropdown">
-        <button class="btn btn-primary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Contenido Guadalajara
-        </button>
-        <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item " href="MyPanelGuad.php">Pantalla De Inicio</a>
-          <a class="dropdown-item" href="#">Eventos</a>
-          <a class="dropdown-item" href="#">Alianzas</a>
+       
+        <li class="nav-item dropdown btn-block btn btn-primary bg-light">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contenido Queretaro</a>
+    <div class="dropdown-menu">
+    <a class="dropdown-item " href="MyPanelCancun.php">Pantalla De Inicio</a>
+          <a class="dropdown-item" href="EventosCancun.php">Eventos</a>
+          <a class="dropdown-item" href="MyPanelCancun.php">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
           <a class="dropdown-item" href="#">Miembros</a>
           <a class="dropdown-item" href="#">Buzón</a>
-
-        </div>
+    </div>
+  </li>
       </div>
-        <div class="dropdown">
-        <button class="btn btn-primary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Contenido Monterrey
-        </button>
-        <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item " href="MyPanelMont.php">Pantalla De Inicio</a>
-          <a class="dropdown-item" href="#">Eventos</a>
-          <a class="dropdown-item" href="#">Alianzas</a>
-          <a class="dropdown-item" href="#">Organización</a>
-          <a class="dropdown-item" href="#">Miembros</a>
-          <a class="dropdown-item" href="#">Buzón</a>
+    
+     
 
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="btn btn-primary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Contenido Queretaro
-        </button>
-        <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item " href="MyPanelQuer.php">Pantalla De Inicio</a>
-          <a class="dropdown-item" href="#">Eventos</a>
-          <a class="dropdown-item" href="#">Alianzas</a>
-          <a class="dropdown-item" href="#">Organización</a>
-          <a class="dropdown-item" href="#">Miembros</a>
-          <a class="dropdown-item" href="#">Buzón</a>
-
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="btn btn-primary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Contenido Queretaro
-        </button>
-        <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item " href="#">Pantalla De Inicio</a>
-          <a class="dropdown-item" href="#">Eventos</a>
-          <a class="dropdown-item" href="#">Alianzas</a>
-          <a class="dropdown-item" href="#">Organización</a>
-          <a class="dropdown-item" href="#">Miembros</a>
-          <a class="dropdown-item" href="#">Buzón</a>
-
-        </div>
-      </div>
+     
     </div>
     <!--HASTA AQUI-->
   </div>
