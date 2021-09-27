@@ -54,7 +54,7 @@
           Contenido Ciudad De México
         </button>
         <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item " href="MyPanelcdmx.php">Pantalla De Inicio</a>
+          <a class="dropdown-item " href="MyPanelcdmx.php">Paantalla De Inicio</a>
           <a class="dropdown-item" href="Eventoscdmx.php">Eventos</a>
           <a class="dropdown-item" href="#">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
@@ -124,7 +124,7 @@
   </div>
 
   <div class="col-10">
-      <h4 class="text-center">Eventos EOMéxico Cancún Riviera Maya</h4>
+      <h4 class="text-center">Eventos EOMéxico CDMX</h4>
       <br>
   <div class="card-deck">
   <div class="card">

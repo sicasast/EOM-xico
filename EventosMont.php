@@ -41,7 +41,7 @@
         </button>
         <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item " href="MyPanelCancun.php">Pantalla De Inicio</a>
-          <a class="dropdown-item" href="EventosCancun.php">Eventos</a>
+          <a class="dropdown-item" href="#">Eventos</a>
           <a class="dropdown-item" href="#">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
           <a class="dropdown-item" href="#">Miembros</a>
@@ -54,8 +54,8 @@
           Contenido Ciudad De México
         </button>
         <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item " href="MyPanelcdmx.php">Pantalla De Inicio</a>
-          <a class="dropdown-item" href="Eventoscdmx.php">Eventos</a>
+          <a class="dropdown-item " href="MyPanelcdmx.php">Paantalla De Inicio</a>
+          <a class="dropdown-item" href="#">Eventos</a>
           <a class="dropdown-item" href="#">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
           <a class="dropdown-item" href="#">Miembros</a>
@@ -69,7 +69,7 @@
         </button>
         <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item " href="MyPanelGuad.php">Pantalla De Inicio</a>
-          <a class="dropdown-item" href="EventosGuad.php">Eventos</a>
+          <a class="dropdown-item" href="#">Eventos</a>
           <a class="dropdown-item" href="#">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
           <a class="dropdown-item" href="#">Miembros</a>
@@ -83,7 +83,7 @@
         </button>
         <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item " href="MyPanelMont.php">Pantalla De Inicio</a>
-          <a class="dropdown-item" href="EventosMont.php">Eventos</a>
+          <a class="dropdown-item" href="#">Eventos</a>
           <a class="dropdown-item" href="#">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
           <a class="dropdown-item" href="#">Miembros</a>
@@ -97,7 +97,7 @@
         </button>
         <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item " href="MyPanelQuer.php">Pantalla De Inicio</a>
-          <a class="dropdown-item" href="EventosQueretaro.php">Eventos</a>
+          <a class="dropdown-item" href="#">Eventos</a>
           <a class="dropdown-item" href="#">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
           <a class="dropdown-item" href="#">Miembros</a>
@@ -124,7 +124,7 @@
   </div>
 
   <div class="col-10">
-      <h4 class="text-center">Eventos EOMéxico Cancún Riviera Maya</h4>
+      <h4 class="text-center">Eventos EOMéxico Monterrey</h4>
       <br>
   <div class="card-deck">
   <div class="card">
