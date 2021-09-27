@@ -40,7 +40,7 @@
           Contenido Cancún Riviera Maya
         </button>
         <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item " href="#">Paantalla De Inicio</a>
+          <a class="dropdown-item " href="MyPanelCancun.php">Pantalla De Inicio</a>
           <a class="dropdown-item" href="#">Eventos</a>
           <a class="dropdown-item" href="#">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
@@ -54,7 +54,7 @@
           Contenido Ciudad De México
         </button>
         <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item " href="#">Paantalla De Inicio</a>
+          <a class="dropdown-item " href="MyPanelcdmx.php">Paantalla De Inicio</a>
           <a class="dropdown-item" href="#">Eventos</a>
           <a class="dropdown-item" href="#">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
@@ -68,7 +68,7 @@
           Contenido Guadalajara
         </button>
         <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item " href="#">Paantalla De Inicio</a>
+          <a class="dropdown-item " href="MyPanelGuad.php">Paantalla De Inicio</a>
           <a class="dropdown-item" href="#">Eventos</a>
           <a class="dropdown-item" href="#">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
@@ -79,10 +79,10 @@
       </div>
         <div class="dropdown">
         <button class="btn btn-primary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Contenido Guadalajara
+          Contenido Monterrey
         </button>
         <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item " href="#">Paantalla De Inicio</a>
+          <a class="dropdown-item " href="MyPanelMont.php">Paantalla De Inicio</a>
           <a class="dropdown-item" href="#">Eventos</a>
           <a class="dropdown-item" href="#">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
@@ -93,10 +93,10 @@
       </div>
       <div class="dropdown">
         <button class="btn btn-primary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Contenido Monterrey
+          Contenido Queretaro
         </button>
         <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item " href="#">Paantalla De Inicio</a>
+          <a class="dropdown-item " href="MyPanelQuer.php">Paantalla De Inicio</a>
           <a class="dropdown-item" href="#">Eventos</a>
           <a class="dropdown-item" href="#">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
@@ -124,288 +124,48 @@
   </div>
 
   <div class="col-10">
-    <h4 class="text-center">Banners Inicio</h4>
-    <div class="row container-fluid">
-      <div class="row container-fluid">
-        <div class="col-2">
-          <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
-          <div class="card-body">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner1">
-              Modificar
-            </button>
-          </div>
-        </div>
-        </div>
-         <div class="col-2">
-            <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
-          <div class="card-body">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner2">
-              Modificar
-            </button>
-          </div>
-        </div>
-        </div>
-         <div class="col-2">
-<div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
-          <div class="card-body">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner3">
-              Modificar
-            </button>
-          </div>
-        </div>        </div>
-         <div class="col-2">
-<div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
-          <div class="card-body">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner4">
-              Modificar
-            </button>
-          </div>
-        </div>        </div>
-         <div class="col-2">
-<div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
-          <div class="card-body">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner5">
-              Modificar
-            </button>
-          </div>
-        </div>        </div>
-         <div class="col-2">
-<div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
-          <div class="card-body">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner6">
-              Modificar
-            </button>
-          </div>
-        </div>        </div>
-      </div>
-
-     
+      <h4 class="text-center">Eventos EOMéxico Cancún Riviera Maya</h4>
+      <br>
+  <div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     </div>
-    <br>
-    <!--
-     <div class="row container-fluid">
-        <div class="col-4  bg-light">
-          <p>Listado De Banners de la página principal , para modificar los banners carga tus archivos en la siguiente sección</p>
-        </div>
-
-        <div class="col-8 ">
-          <form action="#" method="POST" enctype="multipart/form-data">
-                <input type="file" name="d1"  class="btn btn-primary">
-              <br>
-              <br>
-                <input type="file" name="d1"  class="btn btn-primary">
-               <br>
-              <br>
-                <input type="file" name="d1"  class="btn btn-primary">
-               <br>
-              <br>
-                <input type="file" name="d1"  class="btn btn-primary">
-               <br>
-              <br>
-                <input type="file" name="d1"  class="btn btn-primary">
-               <br>
-              <br>
-                <input type="file" name="d1"  class="btn btn-primary">
-               <br>
-              <br>
-          </form>
-        </div>
-      </div>
--->
-      <hr>
-      <h4 class="text-center">Noticia Principal</h4>
-      <div class="row container-fluid">
-      <div class="col-4 ">
-       
-        </div> 
-        <div class="col-4 ">
-        <div class="card" style="width: 23rem; height: 15rem;">
-          <img class="card-img-top" src="prueba1.jpg" alt="Card image cap">
-          <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia">
-            Modificar
-          </button>
-        </div>  
-        <div class="col-4 ">
-       
-       </div>       
-      </div>
-       
-       
-
-
-      </div>
-      <br>
-      <br>  
-      <br>
-      <br>  
-      <br>
-      <br>
-      <br>  
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <hr>  
-
-
-      <h4 class="text-center">Noticias 1</h4>
-      <br>
-       <div class="row container-fluid">
-      <div class="row container-fluid">
-         
-      
-        <div class="col-3">
-          <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">Noticia #1</p>
-            <br>  
-            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia1">
-            Modificar
-          </button>
-          </div>
-        </div>
-        </div>
-         <div class="col-3">
-            <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">Noticia #2</p>
-            <br>  
-            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia2">
-            Modificar
-          </button>
-          </div>
-        </div>
-        </div>
-         <div class="col-3">
-<div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">Noticia #3</p>
-            <br>  
-            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia3">
-            Modificar
-          </button>
-          </div>
-        </div>        </div>
-         <div class="col-3">
-<div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">Noticia #4</p>
-            <br>  
-            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia4">
-            Modificar
-          </button>
-          </div>
-        </div>        
-      </div>
-      </div>
-
-     
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
     </div>
-     <br>
-      <hr>
-      <h4 class="text-center">Noticias 2</h4>
-      <br>
-       <div class="row container-fluid">
-      <div class="row container-fluid">
-         
-      
-        <div class="col-3">
-          <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">Noticia #1</p>
-            <br>  
-            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia1">
-            Modificar
-          </button>
-          </div>
-        </div>
-        </div>
-         <div class="col-3">
-            <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">Noticia #2</p>
-            <br>  
-            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia2">
-            Modificar
-          </button>
-          </div>
-        </div>
-        </div>
-         <div class="col-3">
-<div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">Noticia #3</p>
-            <br>  
-            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia3">
-            Modificar
-          </button>
-          </div>
-        </div>        </div>
-         <div class="col-3">
-<div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">Noticia #4</p>
-            <br>  
-            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia4">
-            Modificar
-          </button>
-          </div>
-        </div>        
-      </div>
-      </div>
-
-     
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
     </div>
-     <br>
-    <hr>  
-    <!--proximos eventos-->
-    <h4 class="text-center">Próximos eventos</h4>
-    <br>
-    <div class="row container-fluid">
-      <div class="col-6">
-        <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Evento 1</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <button class="btn btn-primary" data-toggle="modal" data-target="#Evento1">
-            Modificar
-          </button>
-        </div>
-      </div>
-      </div>
-       <div class="col-6">
-       <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Evento 2</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <button class="btn btn-primary" data-toggle="modal" data-target="#Evento2">
-            Modificar
-          </button>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
   </div>
 </div>
-      </div>
-    </div>
-    </div>
 </div>
-</div>
+
+
 <!--panel lateral-->
+
+
+
+
 
 <!--modales modal banner1-->
 <div class="modal fade" id="banner1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

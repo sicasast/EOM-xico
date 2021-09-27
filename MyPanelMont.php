@@ -26,9 +26,9 @@
 
 <!--panel lateral-->
 <div class="row">
- <div class="col-2 bg-dark">
-      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-      <!-- <a class="btn btn-primary" id="v-pills-home-tab" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-home" aria-selected="true">Vista General Sucursales</a>
+  <div class="col-2 bg-dark">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    	<!-- <a class="btn btn-primary" id="v-pills-home-tab" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-home" aria-selected="true">Vista General Sucursales</a>
       <button class="btn btn-primary" id="v-pills-home-tab" data-toggle="pill" href="MyPanelCancun.php" role="tab" aria-controls="v-pills-home" aria-selected="true">Contenido Cancún Riviera Maya</button>
       <a class="btn btn-primary" id="v-pills-profile-tab" data-toggle="pill" href="MyPanelcdmx.php" role="tab" aria-controls="v-pills-profile" aria-selected="false">Contenido CDMX</a>
       <a class="btn btn-primary" id="v-pills-messages-tab" data-toggle="pill" href="MyPanelGuad.php" role="tab" aria-controls="v-pills-messages" aria-selected="false">Contenido Guadalajara</a>
@@ -120,6 +120,7 @@
         </div>
       </div>
     </div>
+    <!--HASTA AQUI-->
   </div>
 
   <div class="col-10">
@@ -130,7 +131,9 @@
           <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Banner #1</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner1">
+              Modificar
+            </button>
           </div>
         </div>
         </div>
@@ -138,7 +141,9 @@
             <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Banner #2</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner2">
+              Modificar
+            </button>
           </div>
         </div>
         </div>
@@ -146,28 +151,36 @@
 <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Banner #3</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner3">
+              Modificar
+            </button>
           </div>
         </div>        </div>
          <div class="col-2">
 <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Banner #4</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner4">
+              Modificar
+            </button>
           </div>
         </div>        </div>
          <div class="col-2">
 <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Banner #5</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner5">
+              Modificar
+            </button>
           </div>
         </div>        </div>
          <div class="col-2">
 <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Banner #6</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner6">
+              Modificar
+            </button>
           </div>
         </div>        </div>
       </div>
@@ -175,6 +188,7 @@
      
     </div>
     <br>
+    <!--
      <div class="row container-fluid">
         <div class="col-4  bg-light">
           <p>Listado De Banners de la página principal , para modificar los banners carga tus archivos en la siguiente sección</p>
@@ -203,33 +217,31 @@
           </form>
         </div>
       </div>
-
+-->
       <hr>
       <h4 class="text-center">Noticia Principal</h4>
       <div class="row container-fluid">
-         <div class="col-4 bg-light"> 
-           <p>Listado De Noticias de la página principal , para modificar tus caratulas de eventos carga tus archivos en la siguiente sección seguido de una
-           descripción de la noticia</p>
-
-        </div>
-        <div class="col-4">
+      <div class="col-4 ">
+       
+        </div> 
+        <div class="col-4 ">
         <div class="card" style="width: 23rem; height: 15rem;">
           <img class="card-img-top" src="prueba1.jpg" alt="Card image cap">
-        </div>        
+          <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia">
+            Modificar
+          </button>
+        </div>  
+        <div class="col-4 ">
+       
+       </div>       
       </div>
-        <div class="col-4 bg-light">
-          <form action="#" method="POST" enctype="multipart/form-data">
-              <label >Noticia Principal</label>
-                <input type="text" name="Descripcion" placeholder="Agrega una descripción de la noticia" class="form-control">
-                <br>
-                <input type="file" name="d1"  class="btn btn-primary">
-              <br>
-          </form>
-        </div>
+       
        
 
 
       </div>
+      <br>
+      <br>  
       <br>
       <br>  
       <br>
@@ -244,180 +256,148 @@
 
 
       <h4 class="text-center">Noticias 1</h4>
+      <br>
        <div class="row container-fluid">
       <div class="row container-fluid">
-         <div class="col-4  bg-light">
-          <label >Noticia #1</label>
-        <input type="text" name="Descripcion" placeholder="Descripción de la noticia" class="form-control">
-        <input type="file" name="d1"  class="btn btn-primary">
-        <br>
-        <br>
-         <label >Noticia #2</label>
-        <input type="text" name="Descripcion" placeholder="Descripción de la noticia" class="form-control">
-        <input type="file" name="d1"  class="btn btn-primary">
-        <br>
-        <br>
-         <label >Noticia #3</label>
-        <input type="text" name="Descripcion" placeholder="Descripción de la noticia" class="form-control">
-        <input type="file" name="d1"  class="btn btn-primary">
-        <br>
-        <br>
-         <label >Noticia #4</label>
-        <input type="text" name="Descripcion" placeholder="Descripción de la noticia" class="form-control">
-        <input type="file" name="d1"  class="btn btn-primary">
-      </div>
+         
       
-        <div class="col-2">
+        <div class="col-3">
           <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
             <p class="card-text">Noticia #1</p>
+            <br>  
+            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia1">
+            Modificar
+          </button>
           </div>
         </div>
         </div>
-         <div class="col-2">
+         <div class="col-3">
             <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
             <p class="card-text">Noticia #2</p>
+            <br>  
+            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia2">
+            Modificar
+          </button>
           </div>
         </div>
         </div>
-         <div class="col-2">
+         <div class="col-3">
 <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
             <p class="card-text">Noticia #3</p>
+            <br>  
+            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia3">
+            Modificar
+          </button>
           </div>
         </div>        </div>
-         <div class="col-2">
+         <div class="col-3">
 <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
             <p class="card-text">Noticia #4</p>
+            <br>  
+            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia4">
+            Modificar
+          </button>
           </div>
         </div>        
       </div>
-      
-        
-
       </div>
 
      
     </div>
      <br>
       <hr>
-            <h4 class="text-center">Noticias 2</h4>
-             <div class="row container-fluid">
+      <h4 class="text-center">Noticias 2</h4>
+      <br>
+       <div class="row container-fluid">
       <div class="row container-fluid">
-         <div class="col-4  bg-light">
-          <label >Noticia #1</label>
-        <input type="text" name="Descripcion" placeholder="Descripción de la noticia" class="form-control">
-        <input type="file" name="d1"  class="btn btn-primary">
-        <br>
-        <br>
-         <label >Noticia #2</label>
-        <input type="text" name="Descripcion" placeholder="Descripción de la noticia" class="form-control">
-        <input type="file" name="d1"  class="btn btn-primary">
-        <br>
-        <br>
-         <label >Noticia #3</label>
-        <input type="text" name="Descripcion" placeholder="Descripción de la noticia" class="form-control">
-        <input type="file" name="d1"  class="btn btn-primary">
-        <br>
-        <br>
-         <label >Noticia #4</label>
-        <input type="text" name="Descripcion" placeholder="Descripción de la noticia" class="form-control">
-        <input type="file" name="d1"  class="btn btn-primary">
-      </div>
+         
       
-        <div class="col-2">
+        <div class="col-3">
           <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
             <p class="card-text">Noticia #1</p>
+            <br>  
+            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia1">
+            Modificar
+          </button>
           </div>
         </div>
         </div>
-         <div class="col-2">
+         <div class="col-3">
             <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
             <p class="card-text">Noticia #2</p>
+            <br>  
+            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia2">
+            Modificar
+          </button>
           </div>
         </div>
         </div>
-         <div class="col-2">
+         <div class="col-3">
 <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
             <p class="card-text">Noticia #3</p>
+            <br>  
+            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia3">
+            Modificar
+          </button>
           </div>
         </div>        </div>
-         <div class="col-2">
+         <div class="col-3">
 <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
           <div class="card-body">
             <p class="card-text">Noticia #4</p>
+            <br>  
+            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia4">
+            Modificar
+          </button>
           </div>
         </div>        
       </div>
-      
-        
-
       </div>
 
      
     </div>
-    <br>
+     <br>
     <hr>  
     <!--proximos eventos-->
     <h4 class="text-center">Próximos eventos</h4>
+    <br>
     <div class="row container-fluid">
-      <div class="col-4 bg-light">
-        <form action="#" method="POST" enctype="multipart/form-data">
-              <label >Evento 2</label>
-                <input type="text" name="Descripcion" placeholder="Agrega una descripción del evento" class="form-control">
-                <br>
-                <input type="file" name="d1"  class="btn btn-primary">
-                <br>
-                <br>
-                <label >Evento 2</label>
-                <input type="text" name="Descripcion" placeholder="Agrega una descripción del evento" class="form-control">
-                <br>
-                <input type="file" name="d1"  class="btn btn-primary">
-              <br>
-          </form>
+      <div class="col-6">
+        <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Evento 1</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#Evento1">
+            Modificar
+          </button>
+        </div>
       </div>
-      <div class="col-4">
-        <div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="prueba2.jpg" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Evento 1</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
-    </div>
-  </div>
-</div>
-      </div>
-       <div class="col-4">
-        <div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="prueba2.jpg" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Evento 2</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
+       <div class="col-6">
+       <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Evento 2</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <button class="btn btn-primary" data-toggle="modal" data-target="#Evento2">
+            Modificar
+          </button>
   </div>
 </div>
       </div>
@@ -427,7 +407,334 @@
 </div>
 <!--panel lateral-->
 
+<!--modales modal banner1-->
+<div class="modal fade" id="banner1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificación de Banner</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
+        <button type="button" class="btn btn-danger">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modales modal banner 1-->
+<!--modales modal banner2-->
+<div class="modal fade" id="banner2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificación de Banner</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
+        <button type="button" class="btn btn-danger">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modales modal banner 2-->
+<!--modales modal banner3-->
+<div class="modal fade" id="banner3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificación de Banner</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
+        <button type="button" class="btn btn-danger">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modales modal banner 3-->
+<!--modales modal banner4-->
+<div class="modal fade" id="banner4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificación de Banner</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
+        <button type="button" class="btn btn-danger">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modales modal banner 4-->
+<!--modales modal banner5-->
+<div class="modal fade" id="banner5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificación de Banner</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
+        <button type="button" class="btn btn-danger">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modales modal banner 5-->
+<!--modales modal banner6-->
+<div class="modal fade" id="banner6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificación de Banner</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
+        <button type="button" class="btn btn-danger">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modales modal banner 6-->
 
+<!--modales noticia-->
+<div class="modal fade" id="Noticia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Noticia Principal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      </div>
+      <br>
+      <!--formm para llenar datos-->
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa Una Descripción">
+        </div>
+        <center><button type="submit" class="btn btn-warning">Modificar</button></center>
+        <br>
+      </form>
+          <!--formm para llenar datos-->
+     
+    </div>
+  </div>
+</div>
+<!--modales modal noticia -->
+
+<!--modales noticia 1-->
+<div class="modal fade" id="Noticia1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Noticia #1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      </div>
+      <br>
+      <!--formm para llenar datos-->
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa Una Descripción">
+        </div>
+        <center><button type="submit" class="btn btn-warning">Modificar</button></center>
+        <br>
+      </form>
+          <!--formm para llenar datos-->
+     
+    </div>
+  </div>
+</div>
+<!--modales modal noticia1 -->
+
+
+<!--modales noticia 2-->
+<div class="modal fade" id="Noticia2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Noticia #2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      </div>
+      <br>
+      <!--formm para llenar datos-->
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa Una Descripción">
+        </div>
+        <center><button type="submit" class="btn btn-warning">Modificar</button></center>
+        <br>
+      </form>
+          <!--formm para llenar datos-->
+     
+    </div>
+  </div>
+</div>
+<!--modales modal noticia2 -->
+<!--modales noticia 3-->
+<div class="modal fade" id="Noticia3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Noticia #3</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      </div>
+      <br>
+      <!--formm para llenar datos-->
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa Una Descripción">
+        </div>
+        <center><button type="submit" class="btn btn-warning">Modificar</button></center>
+        <br>
+      </form>
+          <!--formm para llenar datos-->
+     
+    </div>
+  </div>
+</div>
+<!--modales modal noticia3 -->
+<!--modales noticia 4-->
+<div class="modal fade" id="Noticia4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Noticia #4</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      </div>
+      <br>
+      <!--formm para llenar datos-->
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa Una Descripción">
+        </div>
+        <center><button type="submit" class="btn btn-warning">Modificar</button></center>
+        <br>
+      </form>
+          <!--formm para llenar datos-->
+     
+    </div>
+  </div>
+</div>
+<!--modales modal noticia4 -->
+
+<!--modales Evento1-->
+<div class="modal fade" id="Evento1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Evento 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      </div>
+      <br>
+      <!--formm para llenar datos-->
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa Una Descripción">
+        </div>
+        <center><button type="submit" class="btn btn-warning">Modificar</button></center>
+        <br>
+      </form>
+          <!--formm para llenar datos-->
+     
+    </div>
+  </div>
+</div>
+<!--modales modal noticia4 -->
+
+<!--modales Evento2-->
+<div class="modal fade" id="Evento2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Evento 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      </div>
+      <br>
+      <!--formm para llenar datos-->
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa Una Descripción">
+        </div>
+        <center><button type="submit" class="btn btn-warning">Modificar</button></center>
+        <br>
+      </form>
+          <!--formm para llenar datos-->
+     
+    </div>
+  </div>
+</div>
+<!--modales modal noticia4 -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
