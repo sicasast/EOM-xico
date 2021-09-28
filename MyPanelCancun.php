@@ -423,6 +423,10 @@
       </div>
       <div class="modal-body">
         <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+        <form action="CargaImgBanner1.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona el nuevo Banner a cargar</small></p>
+          <input type="file" class="btn btn-primary">
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
