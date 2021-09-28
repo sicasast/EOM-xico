@@ -416,22 +416,33 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modificación de Banner</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Banner 1</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
-        <form action="CargaImgBanner1.php" method="POST" enctype="multipart/form-data">
+        <form action="MyPanelCancun.php" method="POST" enctype="multipart/form-data">
         <p class="card-text"><small class="text-muted">Selecciona el nuevo Banner a cargar</small></p>
           <input type="file" class="btn btn-primary">
+          <input type="submit" class="btn btn-success" name="banner1" value="Cargar" id="banner1">
         </form>
+        <!--carga de archivo de banner1-->
+        <?php
+        if(isset($_POST["banner1"]))
+          $target_path = "../img";
+          $target_path = $target_path . basename( $_FILES['uploadedfile']['name']); 
+          if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
+              echo "El archivo ".  basename( $_FILES['uploadedfile']['name']). 
+              " ha sido subido";
+          } else{
+              echo "Ha ocurrido un error, trate de nuevo!";
+          }
+        ?>
+        <!--carga de archivo de banner1-->
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
-        <button type="button" class="btn btn-danger">Cancelar</button>
-      </div>
+      
     </div>
   </div>
 </div>
