@@ -377,7 +377,9 @@
     <h4 class="text-center">Próximos eventos</h4>
     <br>
     <div class="row container-fluid">
-      <div class="col-6">
+    <div class="col-3">
+      </div>
+      <div class="col-3">
         <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
         <div class="card-body">
@@ -389,7 +391,7 @@
         </div>
       </div>
       </div>
-       <div class="col-6">
+       <div class="col-3">
        <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
   <div class="card-body">
@@ -400,6 +402,8 @@
           </button>
   </div>
 </div>
+      </div>
+      <div class="col-3">
       </div>
     </div>
     </div>
