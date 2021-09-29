@@ -78,9 +78,9 @@
       <li class="nav-item dropdown btn-block btn btn-primary bg-light">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contenido Guadalajara</a>
     <div class="dropdown-menu">
-    <a class="dropdown-item " href="MyPanelCancun.php">Pantalla De Inicio</a>
-          <a class="dropdown-item" href="EventosCancun.php">Eventos</a>
-          <a class="dropdown-item" href="MyPanelCancun.php">Alianzas</a>
+    <a class="dropdown-item " href="MyPanelGuad.php">Pantalla De Inicio</a>
+          <a class="dropdown-item" href="EventosGuad.php">Eventos</a>
+          <a class="dropdown-item" href="#">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
           <a class="dropdown-item" href="#">Miembros</a>
           <a class="dropdown-item" href="#">Buzón</a>
@@ -92,9 +92,9 @@
         <li class="nav-item dropdown btn-block btn btn-primary bg-light">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contenido Monterrey</a>
     <div class="dropdown-menu">
-    <a class="dropdown-item " href="MyPanelCancun.php">Pantalla De Inicio</a>
-          <a class="dropdown-item" href="EventosCancun.php">Eventos</a>
-          <a class="dropdown-item" href="MyPanelCancun.php">Alianzas</a>
+    <a class="dropdown-item " href="MyPanelMont.php">Pantalla De Inicio</a>
+          <a class="dropdown-item" href="EventosMont.php">Eventos</a>
+          <a class="dropdown-item" href="#">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
           <a class="dropdown-item" href="#">Miembros</a>
           <a class="dropdown-item" href="#">Buzón</a>
@@ -106,9 +106,9 @@
         <li class="nav-item dropdown btn-block btn btn-primary bg-light">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contenido Queretaro</a>
     <div class="dropdown-menu">
-    <a class="dropdown-item " href="MyPanelCancun.php">Pantalla De Inicio</a>
-          <a class="dropdown-item" href="EventosCancun.php">Eventos</a>
-          <a class="dropdown-item" href="MyPanelCancun.php">Alianzas</a>
+    <a class="dropdown-item " href="MyPanelQuer.php">Pantalla De Inicio</a>
+          <a class="dropdown-item" href="EventosQueretaro.php">Eventos</a>
+          <a class="dropdown-item" href="#">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
           <a class="dropdown-item" href="#">Miembros</a>
           <a class="dropdown-item" href="#">Buzón</a>
