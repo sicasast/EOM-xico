@@ -158,7 +158,7 @@
         </div>        </div>
          <div class="col-2">
 <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+<img class="card-img-top" src="ArchivosEOCancun/banners/banner4.jpg" alt="Card image cap">
           <div class="card-body">
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner4">
               Modificar
@@ -167,7 +167,7 @@
         </div>        </div>
          <div class="col-2">
 <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+<img class="card-img-top" src="ArchivosEOCancun/banners/banner5.jpg" alt="Card image cap">
           <div class="card-body">
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner5">
               Modificar
@@ -176,7 +176,7 @@
         </div>        </div>
          <div class="col-2">
 <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+<img class="card-img-top" src="ArchivosEOCancun/banners/banner6.jpg" alt="Card image cap">
           <div class="card-body">
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner6">
               Modificar
@@ -226,7 +226,7 @@
         </div> 
         <div class="col-4 ">
         <div class="card" style="width: 23rem; height: 15rem;">
-          <img class="card-img-top" src="prueba1.jpg" alt="Card image cap">
+          <img class="card-img-top" src="ArchivosEOCancun/noticiap/noticiap.jpg" alt="Noticia Principal">
           <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia">
             Modificar
           </button>
@@ -247,6 +247,14 @@
       <br>
       <br>
       <br>  
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
       <br>
       <br>
       <br>
@@ -426,7 +434,7 @@
         <form action="ArchivosEOCancun/Banner.php" method="POST" enctype="multipart/form-data">
         <p class="card-text"><small class="text-muted">Selecciona el nuevo Banner a cargar</small></p>
           <input type="file" class="btn btn-primary" name="banner1">
-          <input type="submit" class="btn btn-success" name="banner1" value="Cargar">
+          <input type="submit" class="btn btn-success" name="enviar1" value="Cargar">
         </form>
        
       </div>
@@ -450,7 +458,7 @@
         <form action="ArchivosEOCancun/Banner.php" method="POST" enctype="multipart/form-data">
         <p class="card-text"><small class="text-muted">Selecciona el nuevo Banner a cargar</small></p>
           <input type="file" class="btn btn-primary" name="banner2">
-          <input type="submit" class="btn btn-success" name="banner2" value="Cargar">
+          <input type="submit" class="btn btn-success" name="enviar2" value="Cargar">
         </form>
       </div>
       
@@ -473,7 +481,7 @@
         <form action="ArchivosEOCancun/Banner.php" method="POST" enctype="multipart/form-data">
         <p class="card-text"><small class="text-muted">Selecciona el nuevo Banner a cargar</small></p>
           <input type="file" class="btn btn-primary" name="banner3">
-          <input type="submit" class="btn btn-success" name="banner3" value="Cargar">
+          <input type="submit" class="btn btn-success" name="enviar3" value="Cargar">
         </form>
       </div>
     </div>
@@ -491,11 +499,12 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
-        <button type="button" class="btn btn-danger">Cancelar</button>
+      <img src="ArchivosEOCancun/banners/banner4.jpg" alt="Banner4" class="img-thumbnail">
+        <form action="ArchivosEOCancun/Banner.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona el nuevo Banner a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="banner4">
+          <input type="submit" class="btn btn-success" name="enviar4" value="Cargar">
+        </form>
       </div>
     </div>
   </div>
@@ -512,12 +521,14 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      <img src="ArchivosEOCancun/banners/banner5.jpg" alt="Banner5" class="img-thumbnail">
+        <form action="ArchivosEOCancun/Banner.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona el nuevo Banner a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="banner5">
+          <input type="submit" class="btn btn-success" name="enviar5" value="Cargar">
+        </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
-        <button type="button" class="btn btn-danger">Cancelar</button>
-      </div>
+      
     </div>
   </div>
 </div>
@@ -533,12 +544,14 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      <img src="ArchivosEOCancun/banners/banner6.jpg" alt="Banner6" class="img-thumbnail">
+        <form action="ArchivosEOCancun/Banner.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona el nuevo Banner a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="banner6">
+          <input type="submit" class="btn btn-success" name="enviar6" value="Cargar">
+        </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
-        <button type="button" class="btn btn-danger">Cancelar</button>
-      </div>
+     
     </div>
   </div>
 </div>
@@ -555,19 +568,18 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      <img src="ArchivosEOCancun/noticiap/noticiap.jpg" alt="NoticiaPrincipal" class="img-thumbnail">
+        <form action="ArchivosEOCancun/NoticiaPrincipal.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="noticia">
+          <br>
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
+            <textarea class="form-control" name="descripcion" rows="3"></textarea>
+          </div>
+          <input type="submit" class="btn btn-success" name="enviar7" value="Cargar">
+        </form>
       </div>
-      <br>
-      <!--formm para llenar datos-->
-      <form>
-        <div class="form-group">
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa Una Descripción">
-        </div>
-        <center><button type="submit" class="btn btn-warning">Modificar</button></center>
-        <br>
-      </form>
-          <!--formm para llenar datos-->
-     
     </div>
   </div>
 </div>
