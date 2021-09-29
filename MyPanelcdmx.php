@@ -129,7 +129,7 @@
       <div class="row container-fluid">
         <div class="col-2">
           <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+          <img class="card-img-top" src="ArchivosEOcdmx/banners/banner1.jpg" alt="Card image cap">
           <div class="card-body">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner1">
               Modificar
@@ -139,7 +139,7 @@
         </div>
          <div class="col-2">
             <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+          <img class="card-img-top" src="ArchivosEOcdmx/banners/banner2.jpg" alt="Card image cap">
           <div class="card-body">
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner2">
               Modificar
@@ -149,7 +149,7 @@
         </div>
          <div class="col-2">
 <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+          <img class="card-img-top" src="ArchivosEOcdmx/banners/banner3.jpg" alt="Card image cap">
           <div class="card-body">
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner3">
               Modificar
@@ -158,7 +158,7 @@
         </div>        </div>
          <div class="col-2">
 <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+<img class="card-img-top" src="ArchivosEOcdmx/banners/banner4.jpg" alt="Card image cap">
           <div class="card-body">
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner4">
               Modificar
@@ -167,7 +167,7 @@
         </div>        </div>
          <div class="col-2">
 <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+<img class="card-img-top" src="ArchivosEOcdmx/banners/banner5.jpg" alt="Card image cap">
           <div class="card-body">
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner5">
               Modificar
@@ -176,7 +176,7 @@
         </div>        </div>
          <div class="col-2">
 <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+<img class="card-img-top" src="ArchivosEOcdmx/banners/banner6.jpg" alt="Card image cap">
           <div class="card-body">
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#banner6">
               Modificar
@@ -226,7 +226,7 @@
         </div> 
         <div class="col-4 ">
         <div class="card" style="width: 23rem; height: 15rem;">
-          <img class="card-img-top" src="prueba1.jpg" alt="Card image cap">
+          <img class="card-img-top" src="ArchivosEOcdmx/noticiap/noticiap.jpg" alt="Noticia Principal">
           <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia">
             Modificar
           </button>
@@ -247,6 +247,14 @@
       <br>
       <br>
       <br>  
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
       <br>
       <br>
       <br>
@@ -377,7 +385,9 @@
     <h4 class="text-center">Próximos eventos</h4>
     <br>
     <div class="row container-fluid">
-      <div class="col-6">
+    <div class="col-3">
+      </div>
+      <div class="col-3">
         <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
         <div class="card-body">
@@ -389,7 +399,7 @@
         </div>
       </div>
       </div>
-       <div class="col-6">
+       <div class="col-3">
        <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
   <div class="card-body">
@@ -400,6 +410,8 @@
           </button>
   </div>
 </div>
+      </div>
+      <div class="col-3">
       </div>
     </div>
     </div>
@@ -412,18 +424,21 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modificación de Banner</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Banner 1</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+        <img src="ArchivosEOcdmx/banners/banner1.jpg" alt="Banner1" class="img-thumbnail">
+        <form action="ArchivosEOcdmx/Banner.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona el nuevo Banner a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="banner1">
+          <input type="submit" class="btn btn-success" name="enviar1" value="Cargar">
+        </form>
+       
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
-        <button type="button" class="btn btn-danger">Cancelar</button>
-      </div>
+      
     </div>
   </div>
 </div>
@@ -433,18 +448,20 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modificación de Banner</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Banner 2</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      <img src="ArchivosEOcdmx/banners/banner2.jpg" alt="Banner2" class="img-thumbnail">
+        <form action="ArchivosEOcdmx/Banner.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona el nuevo Banner a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="banner2">
+          <input type="submit" class="btn btn-success" name="enviar2" value="Cargar">
+        </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
-        <button type="button" class="btn btn-danger">Cancelar</button>
-      </div>
+      
     </div>
   </div>
 </div>
@@ -460,11 +477,12 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
-        <button type="button" class="btn btn-danger">Cancelar</button>
+      <img src="ArchivosEOcdmx/banners/banner3.jpg" alt="Banner3" class="img-thumbnail">
+        <form action="ArchivosEOcdmx/Banner.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona el nuevo Banner a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="banner3">
+          <input type="submit" class="btn btn-success" name="enviar3" value="Cargar">
+        </form>
       </div>
     </div>
   </div>
@@ -481,11 +499,12 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
-        <button type="button" class="btn btn-danger">Cancelar</button>
+      <img src="ArchivosEOcdmx/banners/banner4.jpg" alt="Banner4" class="img-thumbnail">
+        <form action="ArchivosEOcdmx/Banner.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona el nuevo Banner a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="banner4">
+          <input type="submit" class="btn btn-success" name="enviar4" value="Cargar">
+        </form>
       </div>
     </div>
   </div>
@@ -502,12 +521,14 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      <img src="ArchivosEOcdmx/banners/banner5.jpg" alt="Banner5" class="img-thumbnail">
+        <form action="ArchivosEOcdmx/Banner.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona el nuevo Banner a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="banner5">
+          <input type="submit" class="btn btn-success" name="enviar5" value="Cargar">
+        </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
-        <button type="button" class="btn btn-danger">Cancelar</button>
-      </div>
+      
     </div>
   </div>
 </div>
@@ -523,12 +544,14 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      <img src="ArchivosEOcdmx/banners/banner6.jpg" alt="Banner6" class="img-thumbnail">
+        <form action="ArchivosEOcdmx/Banner.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona el nuevo Banner a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="banner6">
+          <input type="submit" class="btn btn-success" name="enviar6" value="Cargar">
+        </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
-        <button type="button" class="btn btn-danger">Cancelar</button>
-      </div>
+     
     </div>
   </div>
 </div>
@@ -545,19 +568,18 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      <img src="ArchivosEOcdmx/noticiap/noticiap.jpg" alt="NoticiaPrincipal" class="img-thumbnail">
+        <form action="ArchivosEOcdmx/NoticiaPrincipal.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="noticia">
+          <br>
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
+            <textarea class="form-control" name="descripcion" rows="3"></textarea>
+          </div>
+          <input type="submit" class="btn btn-success" name="enviar7" value="Cargar">
+        </form>
       </div>
-      <br>
-      <!--formm para llenar datos-->
-      <form>
-        <div class="form-group">
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa Una Descripción">
-        </div>
-        <center><button type="submit" class="btn btn-warning">Modificar</button></center>
-        <br>
-      </form>
-          <!--formm para llenar datos-->
-     
     </div>
   </div>
 </div>
