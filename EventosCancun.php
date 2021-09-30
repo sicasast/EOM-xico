@@ -213,17 +213,31 @@
 </div>
 <br>
 <div class="card-deck">
+    <!--evento numero 7-->
+
   <div class="card">
-  <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+  <img class="card-img-top" src="ArchivosEOCancun/eventos/evento7.jpg" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Noticia 6</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <h5 class="card-title">Evento 7</h5>
+      <p class="card-text">Aquí va la descripción del evento que se mostrará en la pagina principal</p>
     </div>
     <div class="card-footer">
-    <button class="btn btn-primary" data-toggle="modal" data-target="#n6">Modificar</button>    
+    <button class="btn btn-primary" data-toggle="modal" data-target="#n7">Modificar</button>    
+    </div>
+  </div>
+    <!--evento numero 7-->
+    <div class="card">
+  <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Noticia 8</h5>
+      <p class="card-text">Aquí va la descripción del evento que se mostrará en la pagina principal</p>
+    </div>
+    <div class="card-footer">
+    <button class="btn btn-primary" data-toggle="modal" data-target="#n8">Modificar</button>    
     </div>
   </div>
   <div class="card">
+    <!--
   <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Noticia 7</h5>
@@ -232,17 +246,9 @@
     <div class="card-footer">
     <button class="btn btn-primary" data-toggle="modal" data-target="#n7">Modificar</button>    
     </div>
+    -->
   </div>
-  <div class="card">
-  <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Noticia 8</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-    <button class="btn btn-primary" data-toggle="modal" data-target="#n8">Modificar</button>    
-    </div>
-  </div>
+  
 </div>
 </div>
 
@@ -415,7 +421,7 @@
 </div>
 <!--modales modal evento 6-->
 
-<!--modales modal noticia7 -->
+<!--modales modal evento7 -->
 <div class="modal fade" id="n7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -426,19 +432,21 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      <img src="ArchivosEOCancun/eventos/evento7.jpg" alt="Evento 6" class="img-thumbnail">
+        <br>
+        <form action="ArchivosEOCancun/Eventos.php" method="POST" enctype="multipart/form-data">
+        <input type="file" class="btn btn-primary" name="evento7">
         <br>
         <p class="card-text"><small class="text-muted">Ingresa Una Descripción</small></p>
         <textarea class="form-control" name="DescripcionNoticia1" rows="3"></textarea>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
-        <button type="button" class="btn btn-danger">Cancelar</button>
+        <br>
+        <input type="submit" name="enviarevento7" value="Cargar" class="btn btn-success">
+        </form> 
       </div>
     </div>
   </div>
 </div>
-<!--modales modal banner 1-->
+<!--modales modal evento 7-->
 
 <!--modales modal noticia8 -->
 <div class="modal fade" id="n8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
