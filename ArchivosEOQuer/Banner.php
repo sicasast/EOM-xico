@@ -4,13 +4,13 @@ if (isset($_POST['enviar1'])){
     if(!$var1){
         echo "<script>
         alert('Ocurrió un error al realizar la carga de archivo, intenta nuevamente');
-        location.href='../MyPanelMont.php';
+        location.href='../MyPanelQuer.php';
         </script>";
     }
     else{
         echo "<script>
         alert('Archivo cargado correctamente');
-        location.href='../MyPanelMont.php';
+        location.href='../MyPanelQuer.php';
         </script>";
     }
 }
@@ -21,13 +21,13 @@ if (isset($_POST['enviar2'])){
     if(!$var2){
         echo "<script>
         alert('Ocurrió un error al realizar la carga de archivo, intenta nuevamente');
-        location.href='../MyPanelMont.php';
+        location.href='../MyPanelQuer.php';
         </script>";
     }
     else{
         echo "<script>
         alert('Archivo cargado correctamente');
-        location.href='../MyPanelMont.php';
+        location.href='../MyPanelQuer.php';
         </script>";
     }
 }
@@ -38,13 +38,13 @@ if (isset($_POST['enviar3'])){
     if(!$var3){
         echo "<script>
         alert('Ocurrió un error al realizar la carga de archivo, intenta nuevamente');
-        location.href='../MyPanelMont.php';
+        location.href='../MyPanelQuer.php';
         </script>";
     }
     else{
         echo "<script>
         alert('Archivo cargado correctamente');
-        location.href='../MyPanelMont.php';
+        location.href='../MyPanelQuer.php';
         </script>";
     }
 }
@@ -54,13 +54,13 @@ if (isset($_POST['enviar4'])){
     if(!$var4){
         echo "<script>
         alert('Ocurrió un error al realizar la carga de archivo, intenta nuevamente');
-        location.href='../MyPanelMont.php';
+        location.href='../MyPanelQuer.php';
         </script>";
     }
     else{
         echo "<script>
         alert('Archivo cargado correctamente');
-        location.href='../MyPanelMont.php';
+        location.href='../MyPanelQuer.php';
         </script>";
     }
 }
@@ -70,13 +70,13 @@ if (isset($_POST['enviar5'])){
     if(!$var5){
         echo "<script>
         alert('Ocurrió un error al realizar la carga de archivo, intenta nuevamente');
-        location.href='../MyPanelMont.php';
+        location.href='../MyPanelQuer.php';
         </script>";
     }
     else{
         echo "<script>
         alert('Archivo cargado correctamente');
-        location.href='../MyPanelMont.php';
+        location.href='../MyPanelQuer.php';
         </script>";
     }
 }
@@ -86,13 +86,13 @@ if (isset($_POST['enviar6'])){
     if(!$var6){
         echo "<script>
         alert('Ocurrió un error al realizar la carga de archivo, intenta nuevamente');
-        location.href='../MyPanelMont.php';
+        location.href='../MyPanelQuer.php';
         </script>";
     }
     else{
         echo "<script>
         alert('Archivo cargado correctamente');
-        location.href='../MyPanelMont.php';
+        location.href='../MyPanelQuer.php';
         </script>";
     }
 }
