@@ -1,3 +1,4 @@
+<?php  include 'ArchivosEOCancun/Eventos.php' ;   ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -226,16 +227,20 @@
     </div>
   </div>
     <!--evento numero 7-->
+<!--evento numero 8-->
+
     <div class="card">
-  <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+    <img class="card-img-top" src="ArchivosEOCancun/eventos/evento8.jpg" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Noticia 8</h5>
+      <h5 class="card-title">Evento 8</h5>
       <p class="card-text">Aquí va la descripción del evento que se mostrará en la pagina principal</p>
     </div>
     <div class="card-footer">
     <button class="btn btn-primary" data-toggle="modal" data-target="#n8">Modificar</button>    
     </div>
   </div>
+  <!--evento numero 8-->
+
   <div class="card">
     <!--
   <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
@@ -276,7 +281,7 @@
         <input type="file" class="btn btn-primary" name="evento1">
         <br>
         <p class="card-text"><small class="text-muted">Ingresa Una Descripción</small></p>
-        <textarea class="form-control" name="DescripcionNoticia1" rows="3"></textarea>
+        <textarea class="form-control" name="DesNot1" rows="3"></textarea>
         <br>
         <input type="submit" name="enviarevento1" value="Cargar" class="btn btn-success">
         </form>
@@ -448,30 +453,32 @@
 </div>
 <!--modales modal evento 7-->
 
-<!--modales modal noticia8 -->
+<!--modales modal evento 8 -->
 <div class="modal fade" id="n8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modificar Noticia 8</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Evento 8</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      <img src="ArchivosEOCancun/eventos/evento8.jpg" alt="Evento 6" class="img-thumbnail">
+        <br>
+        <form action="ArchivosEOCancun/Eventos.php" method="POST" enctype="multipart/form-data">
+        <input type="file" class="btn btn-primary" name="evento8">
         <br>
         <p class="card-text"><small class="text-muted">Ingresa Una Descripción</small></p>
         <textarea class="form-control" name="DescripcionNoticia1" rows="3"></textarea>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
-        <button type="button" class="btn btn-danger">Cancelar</button>
+        <br>
+        <input type="submit" name="enviarevento8" value="Cargar" class="btn btn-success">
+        </form> 
       </div>
     </div>
   </div>
 </div>
-<!--modales modal banner 1-->
+<!--modales modal evento 8-->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

@@ -1,6 +1,7 @@
 <?php
 if (isset($_POST['enviarevento1'])){
     $var1=move_uploaded_file($_FILES['evento1']['tmp_name'], "eventos/evento1.jpg");
+    $var2=$_POST['DesNot1'];
     if(!$var1){
         echo "<script>
         alert('Ocurrió un error al realizar la carga de archivo, intenta nuevamente');
@@ -97,6 +98,22 @@ if (isset($_POST['enviarevento6'])){
 
 if (isset($_POST['enviarevento7'])){
     $var1=move_uploaded_file($_FILES['evento7']['tmp_name'], "eventos/evento7.jpg");
+    if(!$var1){
+        echo "<script>
+        alert('Ocurrió un error al realizar la carga de archivo, intenta nuevamente');
+        location.href='../EventosCancun.php';
+        </script>";
+    }
+    else{
+        echo "<script>
+        alert('Archivo cargado correctamente');
+        location.href='../EventosCancun.php';
+        </script>";
+    }
+}
+
+if (isset($_POST['enviarevento8'])){
+    $var1=move_uploaded_file($_FILES['evento8']['tmp_name'], "eventos/evento8.jpg");
     if(!$var1){
         echo "<script>
         alert('Ocurrió un error al realizar la carga de archivo, intenta nuevamente');
