@@ -62,4 +62,36 @@ if (isset($_POST['enviarevento4'])){
         </script>";
     }
 }
+
+if (isset($_POST['enviarevento5'])){
+    $var1=move_uploaded_file($_FILES['evento5']['tmp_name'], "eventos/evento5.jpg");
+    if(!$var1){
+        echo "<script>
+        alert('Ocurrió un error al realizar la carga de archivo, intenta nuevamente');
+        location.href='../EventosCancun.php';
+        </script>";
+    }
+    else{
+        echo "<script>
+        alert('Archivo cargado correctamente');
+        location.href='../EventosCancun.php';
+        </script>";
+    }
+}
+
+if (isset($_POST['enviarevento6'])){
+    $var1=move_uploaded_file($_FILES['evento6']['tmp_name'], "eventos/evento6.jpg");
+    if(!$var1){
+        echo "<script>
+        alert('Ocurrió un error al realizar la carga de archivo, intenta nuevamente');
+        location.href='../EventosCancun.php';
+        </script>";
+    }
+    else{
+        echo "<script>
+        alert('Archivo cargado correctamente');
+        location.href='../EventosCancun.php';
+        </script>";
+    }
+}
 ?>

@@ -183,26 +183,33 @@
   </div>
   <!--evento numero 4-->
 
+  <!--evento numero 5-->
+
   <div class="card">
-  <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+  <img class="card-img-top" src="ArchivosEOCancun/eventos/evento5.jpg" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Noticia 5</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    <h5 class="card-title">Evento 5 </h5>
+      <p class="card-text">Aquí va la descripción del evento que se mostrará en la pagina principal</p>
     </div>
     <div class="card-footer">
     <button class="btn btn-primary" data-toggle="modal" data-target="#n5">Modificar</button>    
     </div>
   </div>
+    <!--evento numero 5-->
+
+<!--evento numero 6-->
   <div class="card">
-  <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+  <img class="card-img-top" src="ArchivosEOCancun/eventos/evento6.jpg" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Noticia 6</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    <h5 class="card-title">Evento 6 </h5>
+      <p class="card-text">Aquí va la descripción del evento que se mostrará en la pagina principal</p>
     </div>
     <div class="card-footer">
     <button class="btn btn-primary" data-toggle="modal" data-target="#n6">Modificar</button>    
     </div>
   </div>
+  <!--evento numero 6-->
+ 
 </div>
 <br>
 <div class="card-deck">
@@ -355,7 +362,7 @@
 </div>
 <!--modales modal evento 4-->
 
-<!--modales modal noticia5 -->
+<!--modales modal evento 5 -->
 <div class="modal fade" id="n5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -366,21 +373,23 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      <img src="ArchivosEOCancun/eventos/evento5.jpg" alt="Evento 5" class="img-thumbnail">
+        <br>
+        <form action="ArchivosEOCancun/Eventos.php" method="POST" enctype="multipart/form-data">
+        <input type="file" class="btn btn-primary" name="evento5">
         <br>
         <p class="card-text"><small class="text-muted">Ingresa Una Descripción</small></p>
         <textarea class="form-control" name="DescripcionNoticia1" rows="3"></textarea>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
-        <button type="button" class="btn btn-danger">Cancelar</button>
+        <br>
+        <input type="submit" name="enviarevento5" value="Cargar" class="btn btn-success">
+        </form>
       </div>
     </div>
   </div>
 </div>
-<!--modales modal banner 1-->
+<!--modales modal evento 5-->
 
-<!--modales modal noticia6 -->
+<!--modales modal evento6 -->
 <div class="modal fade" id="n6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -391,19 +400,20 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      <img src="ArchivosEOCancun/eventos/evento6.jpg" alt="Evento 6" class="img-thumbnail">
+        <br>
+        <form action="ArchivosEOCancun/Eventos.php" method="POST" enctype="multipart/form-data">
+        <input type="file" class="btn btn-primary" name="evento6">
         <br>
         <p class="card-text"><small class="text-muted">Ingresa Una Descripción</small></p>
         <textarea class="form-control" name="DescripcionNoticia1" rows="3"></textarea>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Cambiar</button>
-        <button type="button" class="btn btn-danger">Cancelar</button>
-      </div>
+        <br>
+        <input type="submit" name="enviarevento6" value="Cargar" class="btn btn-success">
+        </form>      </div>
     </div>
   </div>
 </div>
-<!--modales modal banner 1-->
+<!--modales modal evento 6-->
 
 <!--modales modal noticia7 -->
 <div class="modal fade" id="n7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
