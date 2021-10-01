@@ -52,7 +52,7 @@
     <div class="dropdown-menu">
     <a class="dropdown-item " href="../MyPanelCancun.php">Pantalla De Inicio</a>
           <a class="dropdown-item" href="../EventosCancun.php">Eventos</a>
-          <a class="dropdown-item" href="#">Alianzas</a>
+          <a class="dropdown-item" href="Alianzas.php">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
           <a class="dropdown-item" href="#">Miembros</a>
           <a class="dropdown-item" href="#">Buzón</a>

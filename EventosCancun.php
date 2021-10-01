@@ -53,7 +53,7 @@
     <div class="dropdown-menu">
     <a class="dropdown-item " href="MyPanelCancun.php">Pantalla De Inicio</a>
           <a class="dropdown-item" href="EventosCancun.php">Eventos</a>
-          <a class="dropdown-item" href="#">Alianzas</a>
+          <a class="dropdown-item" href="ArchivosEOCancun/Alianzas.php">Alianzas</a>
           <a class="dropdown-item" href="#">Organización</a>
           <a class="dropdown-item" href="#">Miembros</a>
           <a class="dropdown-item" href="#">Buzón</a>
@@ -133,7 +133,12 @@
     <img class="card-img-top" src="ArchivosEOCancun/eventos/evento1.jpg" alt="Evento1">
     <div class="card-body">
       <h5 class="card-title">Evento1</h5>
-      <p class="card-text">Aquí va la descripción del evento que se mostrará en la pagina principal</p>
+      <p class="card-text">
+        <?php
+        $var2=$_GET['DesNot1'];
+        echo $var2;
+        ?>
+    </p>
     </div>
     <div class="card-footer">
       <button class="btn btn-primary" data-toggle="modal" data-target="#n1">Modificar</button>    
