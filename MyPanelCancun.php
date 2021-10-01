@@ -271,7 +271,7 @@
       
         <div class="col-3">
           <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+          <img class="card-img-top" src="ArchivosEOCancun/noticias1/noticia1.jpg" alt="Noticia Principal">
           <div class="card-body">
             <p class="card-text">Noticia #1</p>
             <br>  
@@ -283,7 +283,7 @@
         </div>
          <div class="col-3">
             <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+            <img class="card-img-top" src="ArchivosEOCancun/noticias1/noticia2.jpg" alt="Noticia Principal">
           <div class="card-body">
             <p class="card-text">Noticia #2</p>
             <br>  
@@ -295,7 +295,7 @@
         </div>
          <div class="col-3">
 <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+<img class="card-img-top" src="ArchivosEOCancun/noticias1/noticia3.jpg" alt="Noticia 3">
           <div class="card-body">
             <p class="card-text">Noticia #3</p>
             <br>  
@@ -306,7 +306,7 @@
         </div>        </div>
          <div class="col-3">
 <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+<img class="card-img-top" src="ArchivosEOCancun/noticias1/noticia4.jpg" alt="Noticia 4">
           <div class="card-body">
             <p class="card-text">Noticia #4</p>
             <br>  
@@ -330,11 +330,11 @@
       
         <div class="col-3">
           <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+          <img class="card-img-top" src="ArchivosEOCancun/noticias1/noticia5.jpg" alt="Noticia 5">
           <div class="card-body">
-            <p class="card-text">Noticia #1</p>
+            <p class="card-text">Noticia #5</p>
             <br>  
-            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia1">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia5">
             Modificar
           </button>
           </div>
@@ -342,11 +342,11 @@
         </div>
          <div class="col-3">
             <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+            <img class="card-img-top" src="ArchivosEOCancun/noticias1/noticia6.jpg" alt="Noticia 6">
           <div class="card-body">
-            <p class="card-text">Noticia #2</p>
+            <p class="card-text">Noticia #6</p>
             <br>  
-            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia2">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia6">
             Modificar
           </button>
           </div>
@@ -596,19 +596,19 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      <img src="ArchivosEOCancun/noticias1/noticia1.jpg" alt="Noticia#1" class="img-thumbnail">
+        <form action="ArchivosEOCancun/Noticias.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="noticia1">
+          <br>
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
+            <textarea class="form-control" name="titulo1" rows="3"></textarea>
+          </div>
+          <input type="submit" class="btn btn-success" name="enviar8" value="Cargar">
+        </form>
       </div>
       <br>
-      <!--formm para llenar datos-->
-      <form>
-        <div class="form-group">
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa Una Descripción">
-        </div>
-        <center><button type="submit" class="btn btn-warning">Modificar</button></center>
-        <br>
-      </form>
-          <!--formm para llenar datos-->
-     
     </div>
   </div>
 </div>
@@ -626,19 +626,19 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      <img src="ArchivosEOCancun/noticias1/noticia2.jpg" alt="Noticia#2" class="img-thumbnail">
+        <form action="ArchivosEOCancun/Noticias.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="noticia2">
+          <br>
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
+            <textarea class="form-control" name="titulo1" rows="3"></textarea>
+          </div>
+          <input type="submit" class="btn btn-success" name="enviar9" value="Cargar">
+        </form>
       </div>
       <br>
-      <!--formm para llenar datos-->
-      <form>
-        <div class="form-group">
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa Una Descripción">
-        </div>
-        <center><button type="submit" class="btn btn-warning">Modificar</button></center>
-        <br>
-      </form>
-          <!--formm para llenar datos-->
-     
     </div>
   </div>
 </div>
@@ -654,18 +654,19 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      <img src="ArchivosEOCancun/noticias1/noticia3.jpg" alt="Noticia#3" class="img-thumbnail">
+        <form action="ArchivosEOCancun/Noticias.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="noticia3">
+          <br>
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
+            <textarea class="form-control" name="titulo1" rows="3"></textarea>
+          </div>
+          <input type="submit" class="btn btn-success" name="enviar10" value="Cargar">
+        </form>
       </div>
       <br>
-      <!--formm para llenar datos-->
-      <form>
-        <div class="form-group">
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa Una Descripción">
-        </div>
-        <center><button type="submit" class="btn btn-warning">Modificar</button></center>
-        <br>
-      </form>
-          <!--formm para llenar datos-->
      
     </div>
   </div>
@@ -682,26 +683,26 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      <img src="ArchivosEOCancun/noticias1/noticia4.jpg" alt="Noticia#4" class="img-thumbnail">
+        <form action="ArchivosEOCancun/Noticias.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="noticia4">
+          <br>
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
+            <textarea class="form-control" name="titulo1" rows="3"></textarea>
+          </div>
+          <input type="submit" class="btn btn-success" name="enviar11" value="Cargar">
+        </form>
       </div>
       <br>
-      <!--formm para llenar datos-->
-      <form>
-        <div class="form-group">
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa Una Descripción">
-        </div>
-        <center><button type="submit" class="btn btn-warning">Modificar</button></center>
-        <br>
-      </form>
-          <!--formm para llenar datos-->
-     
     </div>
   </div>
 </div>
 <!--modales modal noticia4 -->
 
-<!--modales Evento1-->
-<div class="modal fade" id="Evento1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!--modales noticia 5-->
+<div class="modal fade" id="Noticia5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -711,23 +712,84 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
+      <img src="ArchivosEOCancun/noticias1/noticia5.jpg" alt="Noticia#5" class="img-thumbnail">
+        <form action="ArchivosEOCancun/Noticias.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="noticia5">
+          <br>
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
+            <textarea class="form-control" name="titulo1" rows="3"></textarea>
+          </div>
+          <input type="submit" class="btn btn-success" name="enviar12" value="Cargar">
+        </form>
       </div>
       <br>
-      <!--formm para llenar datos-->
-      <form>
-        <div class="form-group">
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa Una Descripción">
-        </div>
-        <center><button type="submit" class="btn btn-warning">Modificar</button></center>
-        <br>
-      </form>
-          <!--formm para llenar datos-->
-     
+    </div>
+  </div>
+</div>
+<!--modales modal noticia5 -->
+
+<!--modales noticia 6-->
+<div class="modal fade" id="Noticia6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Evento 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img src="ArchivosEOCancun/noticias1/noticia6.jpg" alt="Noticia#6" class="img-thumbnail">
+        <form action="ArchivosEOCancun/Noticias.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="noticia6">
+          <br>
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
+            <textarea class="form-control" name="titulo1" rows="3"></textarea>
+          </div>
+          <input type="submit" class="btn btn-success" name="enviar13" value="Cargar">
+        </form>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+<!--modales modal noticia6 -->
+
+
+<!--modales Evento1-->
+<div class="modal fade" id="Noticia6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Noticia6</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img src="ArchivosEOCancun/noticias1/noticia6.jpg" alt="Noticia#6" class="img-thumbnail">
+        <form action="ArchivosEOCancun/Noticias.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="noticia6">
+          <br>
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
+            <textarea class="form-control" name="titulo1" rows="3"></textarea>
+          </div>
+          <input type="submit" class="btn btn-success" name="enviar13" value="Cargar">
+        </form>
+      </div>
+      <br>
     </div>
   </div>
 </div>
 <!--modales modal noticia4 -->
+
+
 
 <!--modales Evento2-->
 <div class="modal fade" id="Evento2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
