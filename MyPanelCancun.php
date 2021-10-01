@@ -11,7 +11,7 @@
 <div class="pos-f-t">
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4">
-      <h5 class="text-white h4">EO México Administrador De Contenido</h5>
+      <h5 class="text-white h4">EO Cancún Riviera Maya / Administrador De Contenido</h5>
       <span class="text-muted">EO México</span>
     </div>
   </div>
@@ -124,7 +124,7 @@
   </div>
 
   <div class="col-10">
-    <h4 class="text-center">Banners Inicio</h4>
+    <h4 class="text-center">EO cancun/ Rivera Maya Banners</h4>
     <div class="row container-fluid">
       <div class="row container-fluid">
         <div class="col-2">
@@ -219,7 +219,7 @@
       </div>
 -->
       <hr>
-      <h4 class="text-center">Noticia Principal</h4>
+      <h4 class="text-center">EO Cancun/Riviera Maya Noticia Principal</h4>
       <div class="row container-fluid">
       <div class="col-4 ">
        
