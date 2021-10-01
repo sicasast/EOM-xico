@@ -354,22 +354,22 @@
         </div>
          <div class="col-3">
 <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+<img class="card-img-top" src="ArchivosEOCancun/noticias1/noticia7.jpg" alt="Noticia 7">
           <div class="card-body">
-            <p class="card-text">Noticia #3</p>
+            <p class="card-text">Noticia #7</p>
             <br>  
-            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia3">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia7">
             Modificar
           </button>
           </div>
         </div>        </div>
          <div class="col-3">
 <div class="card" style="width: 15rem;">
-          <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+<img class="card-img-top" src="ArchivosEOCancun/noticias1/noticia8.jpg" alt="Noticia 8">
           <div class="card-body">
-            <p class="card-text">Noticia #4</p>
+            <p class="card-text">Noticia #8</p>
             <br>  
-            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia4">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia8">
             Modificar
           </button>
           </div>
@@ -382,30 +382,31 @@
      <br>
     <hr>  
     <!--proximos eventos-->
-    <h4 class="text-center">Próximos eventos</h4>
+    <h4 class="text-center">Próximos eventos EOMéxico</h4>
     <br>
     <div class="row container-fluid">
     <div class="col-3">
       </div>
       <div class="col-3">
         <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+        <img class="card-img-top" src="ArchivosEOCancun/ProxEventos/proxevento1.jpg" alt="Próximo Evento 1">
         <div class="card-body">
-          <h5 class="card-title">Evento 1</h5>
+          <h5 class="card-title">Próximo Evento 1</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <button class="btn btn-primary" data-toggle="modal" data-target="#Evento1">
+          <button class="btn btn-primary" data-toggle="modal" data-target="#ProxEvento1">
             Modificar
           </button>
         </div>
       </div>
       </div>
+
        <div class="col-3">
        <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="prueba2.jpg" alt="Card image cap">
+       <img class="card-img-top" src="ArchivosEOCancun/ProxEventos/proxevento2.jpg" alt="Próximo Evento 2">
   <div class="card-body">
-    <h5 class="card-title">Evento 2</h5>
+    <h5 class="card-title">Próximo Evento 2</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <button class="btn btn-primary" data-toggle="modal" data-target="#Evento2">
+    <button class="btn btn-primary" data-toggle="modal" data-target="#ProxEvento2">
             Modificar
           </button>
   </div>
@@ -597,7 +598,7 @@
       </div>
       <div class="modal-body">
       <img src="ArchivosEOCancun/noticias1/noticia1.jpg" alt="Noticia#1" class="img-thumbnail">
-        <form action="ArchivosEOCancun/Noticias.php" method="POST" enctype="multipart/form-data">
+        <form action="ArchivosEOCancun/Noticias.php" method="POST" enctypeq="multipart/form-data">
         <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
           <input type="file" class="btn btn-primary" name="noticia1">
           <br>
@@ -759,9 +760,69 @@
 </div>
 <!--modales modal noticia6 -->
 
+<!--modales noticia 7-->
+<div class="modal fade" id="Noticia7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Noticia 7</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img src="ArchivosEOCancun/noticias1/noticia7.jpg" alt="Noticia#7" class="img-thumbnail">
+        <form action="ArchivosEOCancun/Noticias.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="noticia7">
+          <br>
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
+            <textarea class="form-control" name="titulo1" rows="3"></textarea>
+          </div>
+          <input type="submit" class="btn btn-success" name="enviar14" value="Cargar">
+        </form>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+<!--modales modal noticia7 -->
+
+<!--modales noticia 8-->
+<div class="modal fade" id="Noticia8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Noticia 8</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img src="ArchivosEOCancun/noticias1/noticia8.jpg" alt="Noticia#8" class="img-thumbnail">
+        <form action="ArchivosEOCancun/Noticias.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="noticia8">
+          <br>
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
+            <textarea class="form-control" name="titulo1" rows="3"></textarea>
+          </div>
+          <input type="submit" class="btn btn-success" name="enviar15" value="Cargar">
+        </form>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+<!--modales modal noticia8 -->
+
+
+
 
 <!--modales Evento1-->
-<div class="modal fade" id="Noticia6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="ProxEvento1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -771,28 +832,28 @@
         </button>
       </div>
       <div class="modal-body">
-      <img src="ArchivosEOCancun/noticias1/noticia6.jpg" alt="Noticia#6" class="img-thumbnail">
-        <form action="ArchivosEOCancun/Noticias.php" method="POST" enctype="multipart/form-data">
+      <img src="ArchivosEOCancun/ProxEventos/ProxEvento1.jpg" alt="Proximo Evento 1" class="img-thumbnail">
+        <form action="ArchivosEOCancun/ProxEventos.php" method="POST" enctype="multipart/form-data">
         <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
-          <input type="file" class="btn btn-primary" name="noticia6">
+          <input type="file" class="btn btn-primary" name="ProxEvento1">
           <br>
             <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
             <textarea class="form-control" name="titulo1" rows="3"></textarea>
           </div>
-          <input type="submit" class="btn btn-success" name="enviar13" value="Cargar">
+          <input type="submit" class="btn btn-success" name="enviar17" value="Cargar">
         </form>
       </div>
       <br>
     </div>
   </div>
 </div>
-<!--modales modal noticia4 -->
+<!--modales modal Evento 1 -->
 
 
 
 <!--modales Evento2-->
-<div class="modal fade" id="Evento2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="ProxEvento2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -802,18 +863,18 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="prueba2.jpg" alt="Banner1" class="img-thumbnail">
-      </div>
+      <img src="ArchivosEOCancun/ProxEventos/ProxEvento2.jpg" alt="Proximo Evento 2" class="img-thumbnail">
+        <form action="ArchivosEOCancun/ProxEventos.php" method="POST" enctype="multipart/form-data">
+        <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
+          <input type="file" class="btn btn-primary" name="ProxEvento2">
+          <br>
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
+            <textarea class="form-control" name="titulo1" rows="3"></textarea>
+          </div>
+          <input type="submit" class="btn btn-success" name="enviar18" value="Cargar">
+        </form>      </div>
       <br>
-      <!--formm para llenar datos-->
-      <form>
-        <div class="form-group">
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa Una Descripción">
-        </div>
-        <center><button type="submit" class="btn btn-warning">Modificar</button></center>
-        <br>
-      </form>
-          <!--formm para llenar datos-->
      
     </div>
   </div>

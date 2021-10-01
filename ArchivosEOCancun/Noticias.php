@@ -95,4 +95,35 @@ if (isset($_POST['enviar13'])){
     }
 }
 
+if (isset($_POST['enviar14'])){
+    $var1=move_uploaded_file($_FILES['noticia7']['tmp_name'], "noticias1/noticia7.jpg");
+    if(!$var1){
+        echo "<script>
+        alert('Ocurrió un error al realizar la carga de archivo, intenta nuevamente');
+        location.href='../MyPanelCancun.php';
+        </script>";
+    }
+    else{
+        echo "<script>
+        alert('Archivo cargado correctamente');
+        location.href='../MyPanelCancun.php';
+        </script>";
+    }
+}
+
+if (isset($_POST['enviar15'])){
+    $var1=move_uploaded_file($_FILES['noticia8']['tmp_name'], "noticias1/noticia8.jpg");
+    if(!$var1){
+        echo "<script>
+        alert('Ocurrió un error al realizar la carga de archivo, intenta nuevamente');
+        location.href='../MyPanelCancun.php';
+        </script>";
+    }
+    else{
+        echo "<script>
+        alert('Archivo cargado correctamente');
+        location.href='../MyPanelCancun.php';
+        </script>";
+    }
+}
 ?>
