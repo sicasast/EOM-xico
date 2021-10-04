@@ -135,8 +135,7 @@
       <h5 class="card-title">Evento1</h5>
       <p class="card-text">
         <?php
-        $var2=$_GET['DesNot1'];
-        echo $var2;
+       
         ?>
     </p>
     </div>
