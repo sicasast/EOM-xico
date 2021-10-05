@@ -224,14 +224,14 @@
       <hr>
       <h4 class="text-center">EO Cancun/Riviera Maya Noticia Principal</h4>
       <div class="row container-fluid">
-      <div class="col-4 ">
+      <div class="col ">
        
         </div> 
-        <div class="col-4 ">
+        <div class="col-8">
         <div class="card" style="width: 23rem; height: 15rem;">
           <img class="card-img-top" src="ArchivosEOCancun/noticiap/noticiap.jpg" alt="Noticia Principal">
           <p class="card-text">Título De Noticia</p>
-          <p class="card-text">
+          <p class="card-text bg-light color-dark" >
             <?php
               include 'BaseDeDatos/bd.php';
               if (isset($_POST['principal'])){
@@ -249,7 +249,7 @@
             Modificar
           </button>
         </div>  
-        <div class="col-4 ">
+        <div class="col ">
        
        </div>       
       </div>
@@ -295,7 +295,27 @@
           <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="ArchivosEOCancun/noticias1/noticia1.jpg" alt="Noticia Principal">
           <div class="card-body">
-            <p class="card-text">Noticia #1</p>
+            <p class="card-text bg-light">
+              <?php 
+              if (isset($_POST['Not1Datos'])){
+                $Not1Titulo=$_POST['titulo1'];
+                $Not1Des1=$_POST['NotDes1'];
+                $NotQuery1=mysqli_query($conectar,"UPDATE noticias SET titulo='$Not1Titulo' WHERE idnoticia=2");
+                $NotQuery2=mysqli_query($conectar,"UPDATE noticias SET descripcion='$Not1Des1' WHERE idnoticia=2");
+              }
+              $NotQuery3=mysqli_query($conectar,"SELECT *FROM noticias WHERE idnoticia=2");
+
+              while($Not1Var=$NotQuery3->fetch_assoc()){
+                $NotImp1=$Not1Var['titulo'];
+                $NotImp2=$Not1Var['descripcion'];
+
+              }
+              echo "Evento: $NotImp1";
+              echo "<hr>";
+              echo "Descripción: $NotImp2";
+              ?>
+            </p>
+            
             <br>  
             <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia1">
             Modificar
@@ -633,13 +653,21 @@
         <form action="ArchivosEOCancun/Noticias.php" method="POST" enctypeq="multipart/form-data">
         <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
           <input type="file" class="btn btn-primary" name="noticia1">
-          <br>
-            <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
-            <textarea class="form-control" name="titulo1" rows="3"></textarea>
-          </div>
-          <input type="submit" class="btn btn-success" name="enviar8" value="Cargar">
+          <input type="submit" class="btn btn-success" name="enviar8" value="Cargar Imágen">
         </form>
+      </div>
+      <div class="modal-footer">
+      <div class="mb-3">
+        <form method="POST">
+            <label for="exampleInputEmail1" class="form-label">Agrega Un Titulo</label>
+            <textarea class="form-control" name="titulo1" rows="3"></textarea>
+            <br>
+            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
+            <textarea class="form-control" name="NotDes1" rows="3"></textarea>
+            <br>
+            <input type="submit" name="Not1Datos" value="Cargar Datos" class="btn btn-success">
+        </form>
+          </div>
       </div>
       <br>
     </div>
