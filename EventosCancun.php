@@ -134,9 +134,15 @@
     <div class="card-body">
       <h5 class="card-title">Evento1</h5>
       <p class="card-text">
-        <?php
        
-        ?>
+       <?php
+       /*
+       if(isset($_POST['Des'])){
+       $Descripcion1=$_POST['DesNot1'];
+      echo $Descripcion1;
+       }*/
+     ?>
+      
     </p>
     </div>
     <div class="card-footer">
@@ -283,12 +289,17 @@
         <br>
         <form action="ArchivosEOCancun/Eventos.php" method="POST" enctype="multipart/form-data">
         <input type="file" class="btn btn-primary" name="evento1">
-        <br>
-        <p class="card-text"><small class="text-muted">Ingresa Una Descripción</small></p>
-        <textarea class="form-control" name="DesNot1" rows="3"></textarea>
-        <br>
-        <input type="submit" name="enviarevento1" value="Cargar" class="btn btn-success">
+        
+        <input type="submit" name="enviarevento1" value="Subir Imágen" class="btn btn-success">
         </form>
+      </div>
+      <div class="modal-footer">
+        <form method="POST">
+      <p class="card-text"><small class="text-muted">Ingresa Una Descripción</small></p>
+        <textarea class="form-control" name="DesNot1" rows="3"></textarea>
+        <input type="submit" name="Des" value="Cargar Descripción" class="btn btn-success">
+        </form>
+        
       </div>
     </div>
   </div>
