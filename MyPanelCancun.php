@@ -230,6 +230,21 @@
         <div class="col-4 ">
         <div class="card" style="width: 23rem; height: 15rem;">
           <img class="card-img-top" src="ArchivosEOCancun/noticiap/noticiap.jpg" alt="Noticia Principal">
+          <p class="card-text">Título De Noticia</p>
+          <p class="card-text">
+            <?php
+              include 'BaseDeDatos/bd.php';
+              if (isset($_POST['principal'])){
+                $noticia1=$_POST['descripcion'];
+                $var1=mysqli_query($conectar,"UPDATE noticias SET titulo='$noticia1' WHERE idnoticia=1");
+              }
+              $Consulta1=mysqli_query($conectar,"SELECT titulo FROM noticias WHERE idnoticia=1");
+          while($s1=$Consulta1->fetch_assoc()){
+            $d2=$s1['titulo'];
+          }
+          echo $d2;
+            ?>
+          </p>
           <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia">
             Modificar
           </button>
@@ -250,6 +265,10 @@
       <br>
       <br>
       <br>  
+      <br>
+      <br>
+      <br>
+      <br>
       <br>
       <br>
       <br>
@@ -561,7 +580,7 @@
 </div>
 <!--modales modal banner 6-->
 
-<!--modales noticia-->
+<!--modales noticia principal-->
 <div class="modal fade" id="Noticia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -577,17 +596,27 @@
         <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
           <input type="file" class="btn btn-primary" name="noticia">
           <br>
-            <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
-            <textarea class="form-control" name="descripcion" rows="3"></textarea>
-          </div>
-          <input type="submit" class="btn btn-success" name="enviar7" value="Cargar">
+          <br>
+          <input type="submit" class="btn btn-success" name="enviar7" value="Cargar Imágen">
         </form>
+      </div>
+      <div class="modal-footer">
+          <form method="POST">
+          <!--<div class="mb-1">-->
+            <!--<textarea class="form-control" name="descripcion" ></textarea>-->
+            <input type="text" name="descripcion" class="form-control">
+            <div name="passwordHelpBlock" class="form-text">
+              Ingresa Un Titulo, el cual se mostrará en la página principal de EOMexico          
+            </div>
+            <!--<input type="text" class="form-control" name="descripcion">-->
+            <input type="submit" name="principal" value="Cargar Título" class="btn btn-success">
+          <!--</div>-->
+          </form>
       </div>
     </div>
   </div>
 </div>
-<!--modales modal noticia -->
+<!--modales modal noticia principal -->
 
 <!--modales noticia 1-->
 <div class="modal fade" id="Noticia1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

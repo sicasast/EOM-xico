@@ -174,7 +174,19 @@
   <img class="card-img-top" src="ArchivosEOCancun/eventos/evento2.jpg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Evento 2</h5>
-      <p class="card-text"></p>
+      <p class="card-text">
+        <?php
+          if(isset($_POST['Des2'])){
+            $Descripcion2=$_POST['DesNot2'];
+            $evento2=mysqli_query($conectar,"UPDATE eventos SET descripcion='$Descripcion2' WHERE id=2");
+          }
+          $Consulta2=mysqli_query($conectar,"SELECT descripcion FROM eventos WHERE id=2");
+          while($s1=$Consulta2->fetch_assoc()){
+            $d2=$s1['descripcion'];
+          }
+          echo $d2;
+        ?>
+      </p>
     </div>
     <div class="card-footer">
     <button class="btn btn-primary" data-toggle="modal" data-target="#n2">Modificar</button>    
@@ -339,13 +351,17 @@
         <br>
         <form action="ArchivosEOCancun/Eventos.php" method="POST" enctype="multipart/form-data">
         <input type="file" class="btn btn-primary" name="evento2">
-        <br>
-        <p class="card-text"><small class="text-muted">Ingresa Una Descripción</small></p>
-        <textarea class="form-control" name="DescripcionNoticia1" rows="3"></textarea>
-
-        <br>
-        <input type="submit" name="enviarevento2" value="Cargar" class="btn btn-success">
+        <input type="submit" name="enviarevento2" value="Subir Imágen" class="btn btn-success">
         </form>
+      </div>
+      <div class="modal-footer">
+        <form method="POST">
+        <p class="card-text"><small class="text-muted">Ingresa Una Descripción</small></p>
+        <textarea class="form-control" name="DesNot2" rows="3"></textarea>
+        <input type="submit" name="Des2" value="Cargar Descripción" class="btn btn-success">
+
+        </form>
+
       </div>
     </div>
   </div>
