@@ -144,6 +144,7 @@
         //$query1=mysqli_query($conectar,"INSERT INTO eventos (descripcion) VALUES  ('$Descripcion1')");
         $query2=mysqli_query($conectar,"UPDATE eventos SET descripcion='$Descripcion1' WHERE id=1");
         $queryn1=mysqli_query($conectar,"UPDATE eventos SET titulo='$NotTitulo1' WHERE id=1");
+
      
     }
     $query3=mysqli_query($conectar,"SELECT * FROM eventos WHERE id=1");
@@ -171,20 +172,34 @@
   <div class="card">
   <img class="card-img-top" src="ArchivosEOCancun/eventos/evento2.jpg" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Evento 2</h5>
       <p class="card-text">
-        <?php
-          if(isset($_POST['Des2'])){
-            $Descripcion2=$_POST['DesNot2'];
-            $evento2=mysqli_query($conectar,"UPDATE eventos SET descripcion='$Descripcion2' WHERE id=2");
-          }
-          $Consulta2=mysqli_query($conectar,"SELECT descripcion FROM eventos WHERE id=2");
-          while($s1=$Consulta2->fetch_assoc()){
-            $d2=$s1['descripcion'];
-          }
-          echo $d2;
-        ?>
-      </p>
+       
+       <?php
+
+        include 'BaseDeDatos/bd.php';
+       
+       if(isset($_POST['Des2'])){
+       $Evento2Titulo=$_POST['DesNot2'];
+       $Evento2Descripcion=$_POST['NotTitulo2'];
+        //$query1=mysqli_query($conectar,"INSERT INTO eventos (descripcion) VALUES  ('$Descripcion1')");
+        $Evento2Query1=mysqli_query($conectar,"UPDATE eventos SET descripcion='$Evento2Titulo' WHERE id=2");
+        $Evento2Query2=mysqli_query($conectar,"UPDATE eventos SET titulo='$Evento2Descripcion' WHERE id=2");
+
+     
+    }
+    $Evento2Query3=mysqli_query($conectar,"SELECT * FROM eventos WHERE id=2");
+    while($Evento2Var=$Evento2Query3->fetch_assoc()){
+      $Evento2Imp1=$Evento2Var['titulo'];
+      $Evento2Imp2=$Evento2Var['descripcion'];
+      
+    }
+    echo "<h5 class='card-title'>Titulo: $Evento2Imp1</h5>";
+    echo "<hr>";
+    echo "Descripción: $Evento2Imp2";
+ 
+     ?>
+      
+    </p>
     </div>
     <div class="card-footer">
     <button class="btn btn-primary" data-toggle="modal" data-target="#n2">Modificar</button>    
@@ -197,8 +212,35 @@
   <div class="card">
   <img class="card-img-top" src="ArchivosEOCancun/eventos/evento3.jpg" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Evento 3</h5>
-      <p class="card-text">Aquí va la descripción del evento que se mostrará en la pagina principal</p>
+    <p class="card-text">
+       
+       <?php
+
+        include 'BaseDeDatos/bd.php';
+       
+       if(isset($_POST['Des3'])){
+       $Evento3Titulo=$_POST['DesNot3'];
+       $Evento3Descripcion=$_POST['NotTitulo3'];
+        //$query1=mysqli_query($conectar,"INSERT INTO eventos (descripcion) VALUES  ('$Descripcion1')");
+        $Evento3Query1=mysqli_query($conectar,"UPDATE eventos SET descripcion='$Evento3Titulo' WHERE id=3");
+        $Evento3Query2=mysqli_query($conectar,"UPDATE eventos SET titulo='$Evento3Descripcion' WHERE id=3");
+
+     
+    }
+    $Evento3Query3=mysqli_query($conectar,"SELECT * FROM eventos WHERE id=3");
+
+    while($Evento3Var=$Evento3Query3->fetch_assoc()){
+      $Evento3Imp1=$Evento3Var['titulo'];
+      $Evento3Imp2=$Evento3Var['descripcion'];
+      
+    }
+    echo "<h5 class='card-title'>Titulo: $Evento3Imp1</h5>";
+    echo "<hr>";
+    echo "Descripción: $Evento3Imp2";
+ 
+     ?>
+      
+    </p>
     </div>
     <div class="card-footer">
     <button class="btn btn-primary" data-toggle="modal" data-target="#n3">Modificar</button>    
@@ -213,8 +255,33 @@
   <div class="card">
   <img class="card-img-top" src="ArchivosEOCancun/eventos/evento4.jpg" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Evento 4 </h5>
-      <p class="card-text">Aquí va la descripción del evento que se mostrará en la pagina principal</p>
+      <p class="card-text">
+      <?php
+
+              include 'BaseDeDatos/bd.php';
+
+              if(isset($_POST['Des4'])){
+              $Evento4Titulo=$_POST['DesNot4'];
+              $Evento4Descripcion=$_POST['NotTitulo4'];
+              //$query1=mysqli_query($conectar,"INSERT INTO eventos (descripcion) VALUES  ('$Descripcion1')");
+              $Evento4Query1=mysqli_query($conectar,"UPDATE eventos SET descripcion='$Evento4Titulo' WHERE id=4");
+              $Evento4Query2=mysqli_query($conectar,"UPDATE eventos SET titulo='$Evento4Descripcion' WHERE id=4");
+
+
+              }
+              $Evento4Query3=mysqli_query($conectar,"SELECT * FROM eventos WHERE id=4");
+
+              while($Evento4Var=$Evento4Query3->fetch_assoc()){
+              $Evento4Imp1=$Evento4Var['titulo'];
+              $Evento4Imp2=$Evento4Var['descripcion'];
+
+              }
+              echo "<h5 class='card-title'>Titulo: $Evento4Imp1</h5>";
+              echo "<hr>";
+              echo "Descripción: $Evento4Imp2";
+
+              ?>
+      </p>
     </div>
     <div class="card-footer">
     <button class="btn btn-primary" data-toggle="modal" data-target="#n4">Modificar</button>    
@@ -227,7 +294,6 @@
   <div class="card">
   <img class="card-img-top" src="ArchivosEOCancun/eventos/evento5.jpg" alt="Card image cap">
     <div class="card-body">
-    <h5 class="card-title">Evento 5 </h5>
       <p class="card-text">Aquí va la descripción del evento que se mostrará en la pagina principal</p>
     </div>
     <div class="card-footer">
@@ -354,11 +420,11 @@
         </form>
       </div>
       <div class="modal-footer">
-        <form method="POST">
-        <p class="card-text"><small class="text-muted">Ingresa Una Descripción</small></p>
+      <form method="POST">
+      <p class="card-text"><small class="text-muted">Ingresa Una Descripción</small></p>
+      <textarea class="form-control" name="NotTitulo2" rows="3"></textarea>
         <textarea class="form-control" name="DesNot2" rows="3"></textarea>
         <input type="submit" name="Des2" value="Cargar Descripción" class="btn btn-success">
-
         </form>
 
       </div>
@@ -382,14 +448,16 @@
         <br>
         <form action="ArchivosEOCancun/Eventos.php" method="POST" enctype="multipart/form-data">
         <input type="file" class="btn btn-primary" name="evento3">
-        <br>
-        <p class="card-text"><small class="text-muted">Ingresa Una Descripción</small></p>
-        <textarea class="form-control" name="DescripcionNoticia1" rows="3"></textarea>
-        <br>
         <input type="submit" name="enviarevento3" value="Cargar" class="btn btn-success">
         </form>
       </div>
-      
+      <div class="modal-footer">
+      <form method="POST">
+      <p class="card-text"><small class="text-muted">Ingresa Una Descripción</small></p>
+      <textarea class="form-control" name="NotTitulo3" rows="3"></textarea>
+        <textarea class="form-control" name="DesNot3" rows="3"></textarea>
+        <input type="submit" name="Des3" value="Cargar Descripción" class="btn btn-success">
+        </form>
     </div>
   </div>
 </div>
@@ -410,13 +478,17 @@
         <br>
         <form action="ArchivosEOCancun/Eventos.php" method="POST" enctype="multipart/form-data">
         <input type="file" class="btn btn-primary" name="evento4">
-        <br>
-        <p class="card-text"><small class="text-muted">Ingresa Una Descripción</small></p>
-        <textarea class="form-control" name="DescripcionNoticia1" rows="3"></textarea>
-        <br>
         <input type="submit" name="enviarevento4" value="Cargar" class="btn btn-success">
         </form>
       </div>
+      <div class="modal-footer">
+      <form method="POST">
+      <p class="card-text"><small class="text-muted">Ingresa Una Descripción</small></p>
+      <textarea class="form-control" name="NotTitulo4" rows="3"></textarea>
+        <textarea class="form-control" name="DesNot4" rows="3"></textarea>
+        <input type="submit" name="Des4" value="Cargar Descripción" class="btn btn-success">
+        </form>
+    </div>
     </div>
   </div>
 </div>
