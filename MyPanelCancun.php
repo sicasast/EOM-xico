@@ -299,20 +299,20 @@
               <?php 
               if (isset($_POST['Not1Datos'])){
                 $Not1Titulo=$_POST['titulo1'];
-                $Not1Des1=$_POST['NotDes1'];
-                $NotQuery1=mysqli_query($conectar,"UPDATE noticias SET titulo='$Not1Titulo' WHERE idnoticia=2");
-                $NotQuery2=mysqli_query($conectar,"UPDATE noticias SET descripcion='$Not1Des1' WHERE idnoticia=2");
+                $Not1Des=$_POST['NotDes1'];
+                $Not1Query1=mysqli_query($conectar,"UPDATE noticias SET titulo='$Not1Titulo' WHERE idnoticia=2");
+                $Not1Query2=mysqli_query($conectar,"UPDATE noticias SET descripcion='$Not1Des' WHERE idnoticia=2");
               }
-              $NotQuery3=mysqli_query($conectar,"SELECT *FROM noticias WHERE idnoticia=2");
+              $Not1Query3=mysqli_query($conectar,"SELECT *FROM noticias WHERE idnoticia=2");
 
-              while($Not1Var=$NotQuery3->fetch_assoc()){
-                $NotImp1=$Not1Var['titulo'];
-                $NotImp2=$Not1Var['descripcion'];
+              while($Not1Var=$Not1Query3->fetch_assoc()){
+                $Not1Imp1=$Not1Var['titulo'];
+                $Not1Imp2=$Not1Var['descripcion'];
 
               }
-              echo "Evento: $NotImp1";
+              echo "Evento: $Not1Imp1";
               echo "<hr>";
-              echo "Descripción: $NotImp2";
+              echo "Descripción: $Not1Imp2";
               ?>
             </p>
             
@@ -327,7 +327,28 @@
             <div class="card" style="width: 15rem;">
             <img class="card-img-top" src="ArchivosEOCancun/noticias1/noticia2.jpg" alt="Noticia Principal">
           <div class="card-body">
-            <p class="card-text">Noticia #2</p>
+            <p class="card-text">
+            <?php
+              if (isset($_POST['Not2Datos'])){
+                $Not2Titulo=$_POST['titulo2'];
+                $Not2Des=$_POST['NotDes2'];
+                $Not2Query1=mysqli_query($conectar,"UPDATE noticias SET titulo='$Not2Titulo' WHERE idnoticia=3");
+                $Not2Query2=mysqli_query($conectar,"UPDATE noticias SET descripcion='$Not2Des' WHERE idnoticia=3");
+              }
+              $Not2Query3=mysqli_query($conectar,"SELECT *FROM noticias WHERE idnoticia=3");
+
+              while($Not2Var=$Not2Query3->fetch_assoc()){
+                $Not2Imp1=$Not2Var['titulo'];
+                $Not2Imp2=$Not2Var['descripcion'];
+
+              }
+              echo "Evento: $Not2Imp1";
+              echo "<hr>";
+              echo "Descripción: $Not2Imp2";
+
+              ?>
+
+            </p>
             <br>  
             <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia2">
             Modificar
@@ -339,7 +360,28 @@
 <div class="card" style="width: 15rem;">
 <img class="card-img-top" src="ArchivosEOCancun/noticias1/noticia3.jpg" alt="Noticia 3">
           <div class="card-body">
-            <p class="card-text">Noticia #3</p>
+            <p class="card-text">
+            <?php
+              if (isset($_POST['Not3Datos'])){
+                $Not3Titulo=$_POST['titulo3'];
+                $Not3Des=$_POST['NotDes3'];
+                $Not3Query1=mysqli_query($conectar,"UPDATE noticias SET titulo='$Not3Titulo' WHERE idnoticia=4");
+                $Not3Query2=mysqli_query($conectar,"UPDATE noticias SET descripcion='$Not3Des' WHERE idnoticia=4");
+              }
+              $Not3Query3=mysqli_query($conectar,"SELECT *FROM noticias WHERE idnoticia=4");
+
+              while($Not3Var=$Not3Query3->fetch_assoc()){
+                $Not3Imp1=$Not3Var['titulo'];
+                $Not3Imp2=$Not3Var['descripcion'];
+
+              }
+              echo "Evento: $Not3Imp1";
+              echo "<hr>";
+              echo "Descripción: $Not3Imp2";
+
+              ?>
+
+            </p>
             <br>  
             <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia3">
             Modificar
@@ -350,7 +392,27 @@
 <div class="card" style="width: 15rem;">
 <img class="card-img-top" src="ArchivosEOCancun/noticias1/noticia4.jpg" alt="Noticia 4">
           <div class="card-body">
-            <p class="card-text">Noticia #4</p>
+            <p class="card-text">
+            <?php
+              if (isset($_POST['Not4Datos'])){
+                $Not4Titulo=$_POST['titulo4'];
+                $Not4Des=$_POST['NotDes4'];
+                $Not4Query1=mysqli_query($conectar,"UPDATE noticias SET titulo='$Not4Titulo' WHERE idnoticia=5");
+                $Not4Query2=mysqli_query($conectar,"UPDATE noticias SET descripcion='$Not4Des' WHERE idnoticia=5");
+              }
+              $Not4Query3=mysqli_query($conectar,"SELECT *FROM noticias WHERE idnoticia=5");
+
+              while($Not4Var=$Not4Query3->fetch_assoc()){
+                $Not4Imp1=$Not4Var['titulo'];
+                $Not4Imp2=$Not4Var['descripcion'];
+
+              }
+              echo "Evento: $Not4Imp1";
+              echo "<hr>";
+              echo "Descripción: $Not4Imp2";
+
+              ?>
+            </p>
             <br>  
             <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia4">
             Modificar
@@ -374,7 +436,28 @@
           <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="ArchivosEOCancun/noticias1/noticia5.jpg" alt="Noticia 5">
           <div class="card-body">
-            <p class="card-text">Noticia #5</p>
+            <p class="card-text">
+            <?php
+              if (isset($_POST['Not5Datos'])){
+                $Not5Titulo=$_POST['titulo5'];
+                $Not5Des=$_POST['NotDes5'];
+                $Not5Query1=mysqli_query($conectar,"UPDATE noticias SET titulo='$Not5Titulo' WHERE idnoticia=6");
+                $Not5Query2=mysqli_query($conectar,"UPDATE noticias SET descripcion='$Not5Des' WHERE idnoticia=6");
+              }
+              $Not5Query3=mysqli_query($conectar,"SELECT *FROM noticias WHERE idnoticia=6");
+
+              while($Not5Var=$Not5Query3->fetch_assoc()){
+                $Not5Imp1=$Not5Var['titulo'];
+                $Not5Imp2=$Not5Var['descripcion'];
+
+              }
+              echo "Evento: $Not5Imp1";
+              echo "<hr>";
+              echo "Descripción: $Not5Imp2";
+
+              ?>
+
+            </p>
             <br>  
             <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia5">
             Modificar
@@ -386,7 +469,27 @@
             <div class="card" style="width: 15rem;">
             <img class="card-img-top" src="ArchivosEOCancun/noticias1/noticia6.jpg" alt="Noticia 6">
           <div class="card-body">
-            <p class="card-text">Noticia #6</p>
+            <p class="card-text">
+            <?php
+              if (isset($_POST['Not6Datos'])){
+                $Not6Titulo=$_POST['titulo6'];
+                $Not6Des=$_POST['NotDes6'];
+                $Not6Query1=mysqli_query($conectar,"UPDATE noticias SET titulo='$Not6Titulo' WHERE idnoticia=7");
+                $Not6Query2=mysqli_query($conectar,"UPDATE noticias SET descripcion='$Not6Des' WHERE idnoticia=7");
+              }
+              $Not6Query3=mysqli_query($conectar,"SELECT *FROM noticias WHERE idnoticia=7");
+
+              while($Not6Var=$Not6Query3->fetch_assoc()){
+                $Not6Imp1=$Not6Var['titulo'];
+                $Not6Imp2=$Not6Var['descripcion'];
+
+              }
+              echo "Evento: $Not6Imp1";
+              echo "<hr>";
+              echo "Descripción: $Not6Imp2";
+
+              ?>
+            </p>
             <br>  
             <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia6">
             Modificar
@@ -398,7 +501,28 @@
 <div class="card" style="width: 15rem;">
 <img class="card-img-top" src="ArchivosEOCancun/noticias1/noticia7.jpg" alt="Noticia 7">
           <div class="card-body">
-            <p class="card-text">Noticia #7</p>
+            <p class="card-text">
+            <?php
+              if (isset($_POST['Not7Datos'])){
+                $Not7Titulo=$_POST['titulo7'];
+                $Not7Des=$_POST['NotDes7'];
+                $Not7Query1=mysqli_query($conectar,"UPDATE noticias SET titulo='$Not7Titulo' WHERE idnoticia=8");
+                $Not7Query2=mysqli_query($conectar,"UPDATE noticias SET descripcion='$Not7Des' WHERE idnoticia=8");
+              }
+              $Not7Query3=mysqli_query($conectar,"SELECT *FROM noticias WHERE idnoticia=8");
+
+              while($Not7Var=$Not7Query3->fetch_assoc()){
+                $Not7Imp1=$Not7Var['titulo'];
+                $Not7Imp2=$Not7Var['descripcion'];
+
+              }
+              echo "Evento: $Not7Imp1";
+              echo "<hr>";
+              echo "Descripción: $Not7Imp2";
+
+              ?>
+
+            </p>
             <br>  
             <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia7">
             Modificar
@@ -409,7 +533,27 @@
 <div class="card" style="width: 15rem;">
 <img class="card-img-top" src="ArchivosEOCancun/noticias1/noticia8.jpg" alt="Noticia 8">
           <div class="card-body">
-            <p class="card-text">Noticia #8</p>
+            <p class="card-text">
+            <?php
+              if (isset($_POST['Not8Datos'])){
+                $Not8Titulo=$_POST['titulo8'];
+                $Not8Des=$_POST['NotDes7'];
+                $Not8Query1=mysqli_query($conectar,"UPDATE noticias SET titulo='$Not8Titulo' WHERE idnoticia=9");
+                $Not8Query2=mysqli_query($conectar,"UPDATE noticias SET descripcion='$Not8Des' WHERE idnoticia=9");
+              }
+              $Not8Query3=mysqli_query($conectar,"SELECT *FROM noticias WHERE idnoticia=9");
+
+              while($Not8Var=$Not8Query3->fetch_assoc()){
+                $Not8Imp1=$Not8Var['titulo'];
+                $Not8Imp2=$Not8Var['descripcion'];
+
+              }
+              echo "Evento: $Not8Imp1";
+              echo "<hr>";
+              echo "Descripción: $Not8Imp2";
+
+              ?>
+            </p>
             <br>  
             <button class="btn btn-primary" data-toggle="modal" data-target="#Noticia8">
             Modificar
@@ -433,8 +577,27 @@
         <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="ArchivosEOCancun/ProxEventos/proxevento1.jpg" alt="Próximo Evento 1">
         <div class="card-body">
-          <h5 class="card-title">Próximo Evento 1</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">
+          <?php
+              if (isset($_POST['EnviaEvento1'])){
+                $ProxEven1Titulo=$_POST['ProxEvento1Titulo'];
+                $ProxEven1Descripcion=$_POST['ProxEventoDescripcion'];
+                $ProxEven1Query1=mysqli_query($conectar,"UPDATE eventos SET titulo='$ProxEven1Titulo' WHERE id=9");
+                $ProxEven1Query2=mysqli_query($conectar,"UPDATE eventos SET descripcion='$ProxEven1Descripcion' WHERE id=9");
+              }
+              $ProxEven1Query3=mysqli_query($conectar,"SELECT *FROM eventos WHERE id=9");
+
+              while($ProxEvento1Var1=$ProxEven1Query3->fetch_assoc()){
+                $ProxEv1Imp1=$ProxEvento1Var1['titulo'];
+                $ProxEv1Imp2=$ProxEvento1Var1['descripcion'];
+
+              }
+              echo "Evento: $ProxEv1Imp1";
+              echo "<hr>";
+              echo "Descripción: $ProxEv1Imp2";
+
+              ?>
+          </p>
           <button class="btn btn-primary" data-toggle="modal" data-target="#ProxEvento1">
             Modificar
           </button>
@@ -446,8 +609,27 @@
        <div class="card" style="width: 18rem;">
        <img class="card-img-top" src="ArchivosEOCancun/ProxEventos/proxevento2.jpg" alt="Próximo Evento 2">
   <div class="card-body">
-    <h5 class="card-title">Próximo Evento 2</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="card-text">
+    <?php
+              if (isset($_POST['EnviaEvento2'])){
+                $ProxEven2Titulo=$_POST['ProxEvento2Titulo'];
+                $ProxEven2Descripcion=$_POST['ProxEvento2Descripcion'];
+                $ProxEven2Query1=mysqli_query($conectar,"UPDATE eventos SET titulo='$ProxEven2Titulo' WHERE id=10");
+                $ProxEven2Query2=mysqli_query($conectar,"UPDATE eventos SET descripcion='$ProxEven2Descripcion' WHERE id=10");
+              }
+              $ProxEven2Query3=mysqli_query($conectar,"SELECT *FROM eventos WHERE id=10");
+
+              while($ProxEvento2Var1=$ProxEven2Query3->fetch_assoc()){
+                $ProxEv2Imp1=$ProxEvento2Var1['titulo'];
+                $ProxEv2Imp2=$ProxEvento2Var1['descripcion'];
+
+              }
+              echo "Evento: $ProxEv2Imp1";
+              echo "<hr>";
+              echo "Descripción: $ProxEv2Imp2";
+
+              ?>
+    </p>
     <button class="btn btn-primary" data-toggle="modal" data-target="#ProxEvento2">
             Modificar
           </button>
@@ -650,12 +832,13 @@
       </div>
       <div class="modal-body">
       <img src="ArchivosEOCancun/noticias1/noticia1.jpg" alt="Noticia#1" class="img-thumbnail">
-        <form action="ArchivosEOCancun/Noticias.php" method="POST" enctypeq="multipart/form-data">
+        <form action="ArchivosEOCancun/Noticias.php" method="POST" enctype="multipart/form-data">
         <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
           <input type="file" class="btn btn-primary" name="noticia1">
           <input type="submit" class="btn btn-success" name="enviar8" value="Cargar Imágen">
         </form>
       </div>
+
       <div class="modal-footer">
       <div class="mb-3">
         <form method="POST">
@@ -692,12 +875,20 @@
         <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
           <input type="file" class="btn btn-primary" name="noticia2">
           <br>
-            <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
-            <textarea class="form-control" name="titulo1" rows="3"></textarea>
-          </div>
           <input type="submit" class="btn btn-success" name="enviar9" value="Cargar">
         </form>
+      </div>
+      <div class="modal-footer">
+      <div class="mb-3">
+            <form method="POST">
+            <label for="exampleInputEmail1" class="form-label">Agrega Un titulo</label>
+            <textarea class="form-control" name="titulo2" rows="3"></textarea>
+            <label for="exampleInputEmail1" class="form-label">Agrega una descripción</label>
+            <textarea class="form-control" name="NotDes2" rows="3"></textarea>
+            <br>
+            <input type="submit" class="btn btn-success" name="Not2Datos" value="Cargar Datos">
+            </form>
+          </div>
       </div>
       <br>
     </div>
@@ -720,12 +911,20 @@
         <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
           <input type="file" class="btn btn-primary" name="noticia3">
           <br>
-            <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
-            <textarea class="form-control" name="titulo1" rows="3"></textarea>
-          </div>
           <input type="submit" class="btn btn-success" name="enviar10" value="Cargar">
         </form>
+      </div>
+      <div class="modal-footer">
+      <div class="mb-3">
+            <form method="POST">
+            <label for="exampleInputEmail1" class="form-label">Agrega Un titulo</label>
+            <textarea class="form-control" name="titulo3" rows="3"></textarea>
+            <label for="exampleInputEmail1" class="form-label">Agrega una descripción</label>
+            <textarea class="form-control" name="NotDes3" rows="3"></textarea>
+            <br>
+            <input type="submit" class="btn btn-success" name="Not3Datos" value="Cargar Datos">
+            </form>
+          </div>
       </div>
       <br>
      
@@ -749,12 +948,20 @@
         <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
           <input type="file" class="btn btn-primary" name="noticia4">
           <br>
-            <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
-            <textarea class="form-control" name="titulo1" rows="3"></textarea>
-          </div>
           <input type="submit" class="btn btn-success" name="enviar11" value="Cargar">
         </form>
+      </div>
+      <div class="modal-footer">
+      <div class="mb-3">
+            <form method="POST">
+            <label for="exampleInputEmail1" class="form-label">Agrega Un titulo</label>
+            <textarea class="form-control" name="titulo4" rows="3"></textarea>
+            <label for="exampleInputEmail1" class="form-label">Agrega una descripción</label>
+            <textarea class="form-control" name="NotDes4" rows="3"></textarea>
+            <br>
+            <input type="submit" class="btn btn-success" name="Not4Datos" value="Cargar Datos">
+            </form>
+          </div>
       </div>
       <br>
     </div>
@@ -778,12 +985,20 @@
         <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
           <input type="file" class="btn btn-primary" name="noticia5">
           <br>
-            <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
-            <textarea class="form-control" name="titulo1" rows="3"></textarea>
-          </div>
           <input type="submit" class="btn btn-success" name="enviar12" value="Cargar">
         </form>
+      </div>
+      <div class="modal-footer">
+      <div class="mb-3">
+            <form method="POST">
+            <label for="exampleInputEmail1" class="form-label">Agrega Un titulo</label>
+            <textarea class="form-control" name="titulo5" rows="3"></textarea>
+            <label for="exampleInputEmail1" class="form-label">Agrega una descripción</label>
+            <textarea class="form-control" name="NotDes5" rows="3"></textarea>
+            <br>
+            <input type="submit" class="btn btn-success" name="Not5Datos" value="Cargar Datos">
+            </form>
+          </div>
       </div>
       <br>
     </div>
@@ -807,12 +1022,20 @@
         <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
           <input type="file" class="btn btn-primary" name="noticia6">
           <br>
-            <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
-            <textarea class="form-control" name="titulo1" rows="3"></textarea>
-          </div>
           <input type="submit" class="btn btn-success" name="enviar13" value="Cargar">
         </form>
+      </div>
+      <div class="modal-footer">
+      <div class="mb-3">
+            <form method="POST">
+            <label for="exampleInputEmail1" class="form-label">Agrega Un titulo</label>
+            <textarea class="form-control" name="titulo6" rows="3"></textarea>
+            <label for="exampleInputEmail1" class="form-label">Agrega una descripción</label>
+            <textarea class="form-control" name="NotDes6" rows="3"></textarea>
+            <br>
+            <input type="submit" class="btn btn-success" name="Not6Datos" value="Cargar Datos">
+            </form>
+          </div>
       </div>
       <br>
     </div>
@@ -836,12 +1059,20 @@
         <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
           <input type="file" class="btn btn-primary" name="noticia7">
           <br>
-            <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
-            <textarea class="form-control" name="titulo1" rows="3"></textarea>
-          </div>
           <input type="submit" class="btn btn-success" name="enviar14" value="Cargar">
         </form>
+      </div>
+      <div class="modal-footer">
+      <div class="mb-3">
+            <form method="POST">
+            <label for="exampleInputEmail1" class="form-label">Agrega Un titulo</label>
+            <textarea class="form-control" name="titulo7" rows="3"></textarea>
+            <label for="exampleInputEmail1" class="form-label">Agrega una descripción</label>
+            <textarea class="form-control" name="NotDes7" rows="3"></textarea>
+            <br>
+            <input type="submit" class="btn btn-success" name="Not7Datos" value="Cargar Datos">
+            </form>
+          </div>
       </div>
       <br>
     </div>
@@ -865,12 +1096,20 @@
         <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
           <input type="file" class="btn btn-primary" name="noticia8">
           <br>
-            <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
-            <textarea class="form-control" name="titulo1" rows="3"></textarea>
-          </div>
           <input type="submit" class="btn btn-success" name="enviar15" value="Cargar">
         </form>
+      </div>
+      <div class="modal-footer">
+      <div class="mb-3">
+            <form method="POST">
+            <label for="exampleInputEmail1" class="form-label">Agrega Un titulo</label>
+            <textarea class="form-control" name="titulo8" rows="3"></textarea>
+            <label for="exampleInputEmail1" class="form-label">Agrega una descripción</label>
+            <textarea class="form-control" name="NotDes8" rows="3"></textarea>
+            <br>
+            <input type="submit" class="btn btn-success" name="Not8Datos" value="Cargar Datos">
+            </form>
+          </div>
       </div>
       <br>
     </div>
@@ -897,13 +1136,22 @@
         <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
           <input type="file" class="btn btn-primary" name="ProxEvento1">
           <br>
-            <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
-            <textarea class="form-control" name="titulo1" rows="3"></textarea>
-          </div>
           <input type="submit" class="btn btn-success" name="enviar17" value="Cargar">
         </form>
       </div>
+      <div class="modal-footer">
+      <div class="mb-3">
+            <form method="POST">
+            <label for="exampleInputEmail1" class="form-label">Agrega Un titulo</label>
+            <textarea class="form-control" name="ProxEvento1Titulo" rows="3"></textarea>
+            <label for="exampleInputEmail1" class="form-label">Agrega una descripción</label>
+            <textarea class="form-control" name="ProxEventoDescripcion" rows="3"></textarea>
+            <br>
+            <input type="submit" class="btn btn-success" name="EnviaEvento1" value="Cargar Datos">
+            </form>
+          </div>
+      </div>
+
       <br>
     </div>
   </div>
@@ -928,12 +1176,21 @@
         <p class="card-text"><small class="text-muted">Selecciona la nueva noticia a cargar</small></p>
           <input type="file" class="btn btn-primary" name="ProxEvento2">
           <br>
-            <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Agrega Una Descripción</label>
-            <textarea class="form-control" name="titulo1" rows="3"></textarea>
-          </div>
           <input type="submit" class="btn btn-success" name="enviar18" value="Cargar">
-        </form>      </div>
+        </form>      
+      </div>
+      <div class="modal-footer">
+      <div class="mb-3">
+            <form method="POST">
+            <label for="exampleInputEmail1" class="form-label">Agrega Un titulo</label>
+            <textarea class="form-control" name="ProxEvento2Titulo" rows="3"></textarea>
+            <label for="exampleInputEmail1" class="form-label">Agrega una descripción</label>
+            <textarea class="form-control" name="ProxEvento2Descripcion" rows="3"></textarea>
+            <br>
+            <input type="submit" class="btn btn-success" name="EnviaEvento2" value="Cargar Datos">
+            </form>
+          </div>
+      </div>
       <br>
      
     </div>

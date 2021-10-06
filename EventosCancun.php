@@ -132,7 +132,6 @@
   <div class="card">
     <img class="card-img-top" src="ArchivosEOCancun/eventos/evento1.jpg" alt="Evento1">
     <div class="card-body">
-      <h5 class="card-title">Evento1</h5>
       <p class="card-text">
        
        <?php
@@ -141,23 +140,22 @@
        
        if(isset($_POST['Des'])){
        $Descripcion1=$_POST['DesNot1'];
+       $NotTitulo1=$_POST['NotTitulo1'];
         //$query1=mysqli_query($conectar,"INSERT INTO eventos (descripcion) VALUES  ('$Descripcion1')");
         $query2=mysqli_query($conectar,"UPDATE eventos SET descripcion='$Descripcion1' WHERE id=1");
-       /* if($query1){
-       // $query2=mysqli_query($conectar,"UPDATE eventos SET descripcion='$Descripcion1'");
-       $query2=mysqli_query($conectar,"TRUNCATE eventos");
-       $query1=mysqli_query($conectar,"INSERT INTO eventos (descripcion) VALUES  ('$Descripcion1')");
-              // $query2=mysqli_query($conectar,"UPDATE eventos SET descripcion='$Descripcion1'");
-
-      }*/
+        $queryn1=mysqli_query($conectar,"UPDATE eventos SET titulo='$NotTitulo1' WHERE id=1");
      
     }
-    $query3=mysqli_query($conectar,"SELECT descripcion FROM eventos WHERE id=1");
+    $query3=mysqli_query($conectar,"SELECT * FROM eventos WHERE id=1");
     while($s=$query3->fetch_assoc()){
+      $d0=$s['titulo'];
+
       $d1=$s['descripcion'];
       
     }
-    echo $d1;
+    echo "<h5 class='card-title'>Titulo: $d0</h5>";
+    echo "<hr>";
+    echo "Descripción: $d1";
  
      ?>
       
@@ -326,6 +324,7 @@
       <div class="modal-footer">
         <form method="POST">
       <p class="card-text"><small class="text-muted">Ingresa Una Descripción</small></p>
+      <textarea class="form-control" name="NotTitulo1" rows="3"></textarea>
         <textarea class="form-control" name="DesNot1" rows="3"></textarea>
         <input type="submit" name="Des" value="Cargar Descripción" class="btn btn-success">
         </form>
