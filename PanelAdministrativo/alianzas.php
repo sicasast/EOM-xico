@@ -64,20 +64,20 @@
                 <!-- Page content-->
                 <div class="container-fluid">
 				<br>
-				<h6 class="text-muted">Sección Eventos</h6>
+				<h6 class="text-muted">Sección Alianzas</h6>
 				<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#evento1">
-				Agregar Evento	
+				Agregar Alianza	
 				</button>
 				<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#evento2">
-				Modificar Evento
+				Modificar Alianza
 				</button>
 			    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#evento3">
-				Eliminar Evento
+				Eliminar Alianza
 				</button>			
 				<br>
 				<div class="card-group">
                 <?php
-                $consulta_eventos=mysqli_query($conexion, "SELECT *FROM eventos WHERE locacion='cancun'");
+                $consulta_eventos=mysqli_query($conexion, "SELECT *FROM alianzas WHERE locacion='cancun'");
                 while($ciclo_eventos=mysqli_fetch_assoc($consulta_eventos)) {
                 	$campo_eventos0=$ciclo_eventos['id'];
                 	$campo_eventos0=$ciclo_eventos['titulo'];
@@ -85,7 +85,7 @@
 
                 ?>
                 <?php
-			  $consulta2="SELECT imagen FROM eventos";
+			  $consulta2="SELECT imagen FROM alianzas";
 			  $a=$conexion->query($consulta2);
 			  while ($datos=$a->fetch_object()) {
 				$imagen = base64_encode($datos->foto=$ciclo_eventos['imagen']);
@@ -100,11 +100,11 @@
 								<img src="data:image/jpeg; base64 ,<?php echo $imagen ?>" class="card-img-top" alt="..." height="300px" width="700px">
 								<h6 class="card-subtitle text-muted">
 									<br>
-									<?php  echo 'ID Evento:' . ' ' . $ciclo_eventos['id'];  ?></h6>
+									<?php  echo 'ID Alianza:' . ' ' . $ciclo_eventos['id'];  ?></h6>
 								<h6 class="card-subtitle text-muted">
 									<br>
-									<?php  echo 'Nombre De Evento:' . ' ' . $ciclo_eventos['titulo'];  ?></h6>
-								<p class="card-text p-y-1"><?php  echo 'Descripción De Evento: '. $ciclo_eventos['descripcion'];  ?></p>
+									<?php  echo 'Nombre De Alianza:' . ' ' . $ciclo_eventos['titulo'];  ?></h6>
+								<p class="card-text p-y-1"><?php  echo 'Descripción De Alianza: '. $ciclo_eventos['descripcion'];  ?></p>
 							</div>
 							</div>
 							</div>
@@ -123,7 +123,7 @@
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
-			        <h5 class="modal-title" id="exampleModalLabel">Nuevo Evento</h5>
+			        <h5 class="modal-title" id="exampleModalLabel">Nueva Alianza/h5>
 			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			      </div>
 			      <div class="modal-body">
@@ -146,15 +146,15 @@
 			$img_eve=addslashes(file_get_contents($_FILES['img_evento'] ['tmp_name']));
 			$tit_eve=$_POST['titulo'];
 			$des_eve=$_POST['descripcion'];
-			$cons_eventos=mysqli_query($conexion, "INSERT INTO eventos VALUES (0,'$tit_eve','$des_eve','$img_eve','cancun')");
+			$cons_eventos=mysqli_query($conexion, "INSERT INTO alianzas VALUES (0,'$tit_eve','$des_eve','$img_eve','cancun')");
 			if($cons_eventos){
 				echo "<script> alert('La carga de archivos  se realizo con exito');
-				location.href='eventos.php';
+				location.href='alianzas.php';
 				   </script>";
 			}
 			else{
 				echo "<script> alert('La carga de archivos no se realizo con exito');
-				location.href='eventos.php';
+				location.href='alianzas.php';
 				   </script>";
 			}
 
@@ -167,16 +167,16 @@
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
-			        <h5 class="modal-title" id="exampleModalLabel">Modificar  Evento</h5>
+			        <h5 class="modal-title" id="exampleModalLabel">Modificar  Alianza</h5>
 			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			      </div>
 			      <div class="modal-body">
-			      	<label class="form-control">Selecciona ID de Evento</label>
+			      	<label class="form-control">Selecciona ID de Alianza</label>
 			      	<br>
 			        <form method="POST" enctype="multipart/form-data">
 			        	<select name="valor">
 			        	<?php
-			        	$cons_portada_eve=mysqli_query($conexion,"SELECT id FROM eventos");
+			        	$cons_portada_eve=mysqli_query($conexion,"SELECT id FROM alianzas");
 			        	while($r_eventos=mysqli_fetch_assoc($cons_portada_eve)){ 
 			        		$i_eventos=$r_eventos['id'];
 			        	?>
@@ -202,7 +202,7 @@
 			$img_eve=addslashes(file_get_contents($_FILES['imagennueva'] ['tmp_name']));
 			$tit_eve=$_POST['texto1'];
 			$des_eve=$_POST['texto2'];
-			$cons_eventos=mysqli_query($conexion, "UPDATE eventos SET titulo='$tit_eve', descripcion='$des_eve', imagen='$img_eve', locacion='cancun' WHERE id='$id_seleccion'");
+			$cons_eventos=mysqli_query($conexion, "UPDATE alianzas SET titulo='$tit_eve', descripcion='$des_eve', imagen='$img_eve', locacion='cancun' WHERE id='$id_seleccion'");
 			if($cons_eventos){
 				echo "<script> alert('La carga de archivos  se realizo con exito');
 				location.href='eventos.php';
@@ -222,16 +222,16 @@
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
-			        <h5 class="modal-title" id="exampleModalLabel">Eliminar Evento</h5>
+			        <h5 class="modal-title" id="exampleModalLabel">Eliminar Alianza</h5>
 			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			      </div>
 			      <div class="modal-body">
-			      	<label class="form-control">Selecciona ID de Evento</label>
+			      	<label class="form-control">Selecciona ID de Alianza</label>
 			      	<br>
 			        <form method="POST" enctype="multipart/form-data">
 			        	<select name="eliminar_evento">
 			        	<?php
-			        	$id_event=mysqli_query($conexion,"SELECT id FROM eventos");
+			        	$id_event=mysqli_query($conexion,"SELECT id FROM alianzas");
 			        	while($r2_evento=mysqli_fetch_assoc($id_event)){ 
 			        		$i2_evento=$r2_evento['id'];
 			        	?>
@@ -249,10 +249,10 @@
 			<?php
 				if(isset($_POST['el_evento'])){
 						$ke_evento=$_POST['eliminar_evento'];
-						$kcon2_evento=mysqli_query($conexion,"DELETE FROM eventos WHERE id = '$ke_evento';");
+						$kcon2_evento=mysqli_query($conexion,"DELETE FROM alianzas WHERE id = '$ke_evento';");
 						if($kcon2_evento){
 							echo "<script>
-							location.href='eventos.php';
+							location.href='alianzas.php';
 							</script>";
 						}
 					}

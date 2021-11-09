@@ -32,7 +32,7 @@
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="inicio.php">Pantalla Inicio</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="eventos.php">Pantalla Eventos</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="usuarios.php">Usuarios</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Events</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="alianzas.php">Alianzas</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Status</a>
                 </div>
