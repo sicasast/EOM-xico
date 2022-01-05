@@ -1,0 +1,24 @@
+:root{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 13px;
+}
+.fondo{
+   background-color: #4030C5;
+   
+}
+
+
+.mapa{
+   margin:20rem,20rem,20rem,20rem;
+
+}
+.mapa path{
+   fill:#FFC300;
+   stroke:black;
+   stroke-width:1px;
+}
+
+.mapa a :hover{
+   fill:  #308be5 ; 
+   transition: 1s;
+}
